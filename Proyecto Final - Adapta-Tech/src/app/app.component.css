@@ -1,0 +1,19 @@
+* {
+    background-image: url(../assets/fondoapp.avif);
+    background-position: center;
+    background-size: cover;
+}
+:root {
+    color-scheme: light dark;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    
+}
+/* para dejar el menú fijo*/
+header {
+    position: sticky;
+    top: 0;
+}

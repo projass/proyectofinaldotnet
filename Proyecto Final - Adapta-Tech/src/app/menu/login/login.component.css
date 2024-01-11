@@ -4,13 +4,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -100px;
     padding: 0;
     background-image: url(../../../assets/fondo.jpeg);
     background-position: center;
     background-size: cover;
     min-width: 90vw;
-    min-height: 100vh;
+    min-height: auto;
+    margin-top: 30px;
 }
 
 /* contenedor del login a la izquierda */
@@ -41,8 +41,6 @@
     box-sizing: border-box;
 }
 
-/* formulario de login */
-/* formulario de login */
 #login {
     width: 100%;
     max-width: 320px;

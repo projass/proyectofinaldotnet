@@ -1,19 +1,14 @@
 * {
     box-sizing: border-box;
+    margin-top: 1px;
     text-decoration: none;
-    list-style: none;
-    margin: 1px;
-    padding: 0;
-    position: sticky;
-    top:0;
-    z-index: 1;
 }
 /* Grid */
 .secciones {
     display: grid;
     grid-template-columns: 250px 1fr 250px;
     grid-template-areas: "login menu logo";
-    gap: 1rem .5rem;
+    gap: 1rem;
   }
 
 /* Estructura login */
@@ -44,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 200px;
     background-color: rgb(44, 47, 49);
     color: white;
     font-size: large;
@@ -63,15 +58,23 @@
 .angular li:hover .desplegable1 {
     display: block;
     position: absolute;
-    border-radius: 0.5rem;
     padding: 1rem 1.5rem 2rem 1rem;
     width: 250px;
-    height: 200px;
-    border: 5px solid black;
-    z-index: 1;
-    background-color: rgb(53, 124, 175);  
-    line-height: 1.4; 
-    margin-top: 25px;
+    height: auto;
+    border-top: 5px solid rgb(5, 20, 221);
+    background-color: rgba(44, 47, 49, 0.85);  
+    margin-top: auto;
+    animation: rotar 0.5s ease backwards;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg); 
+  }
 }
 /* Ocultar desplegable 2 */
 .angular .desplegable1 .desplegable2{
@@ -102,7 +105,7 @@
 }
 
 .logo img {
-    width: 100px;
+    width: 90px;
     height: 75px;
 }
  
@@ -140,6 +143,7 @@ a {
     border-radius: 0.5rem;
     box-shadow: inset 1px 1px 1px black;
     background-color: rgb(16, 17, 18);
+    font-size: small;
     display: block;
     transition: all 1s ease;
 }

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { FooterComponent } from '../menu/footer/footer.component';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [FooterComponent],
+  imports: [],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
