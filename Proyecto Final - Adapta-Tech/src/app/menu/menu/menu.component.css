@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 1px;
+    padding: 0;
+}
+
+/* Grid */
+.secciones {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    grid-template-areas: "login menu logo";
+    gap: 1rem .5rem;
+  }
+
+/* Estructura login */
+  .login {
+    grid-area: login;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(44, 47, 49);
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    height: 80px;
+    box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Estructura menú */
+.menu {
+    grid-area: menu;
+    height: 80px;
+}
+
+ /* Barra desplegable */
+ .angular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: rgb(44, 47, 49);
+    color: white;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 80px;
+}
+
+/* Ocultar desplegable 1 */
+.angular .desplegable1 {
+    display: none;
+}
+/* Mostrar desplegable 1 */
+.angular li:hover .desplegable1 {
+    display: block;
+    position: absolute;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem 2rem 1rem;
+    width: 250px;
+    height: 200px;
+    border: 5px solid black;
+    z-index: 1;
+    background-color: rgb(53, 124, 175);  
+    line-height: 1.4; 
+    margin-top: -2px;
+}
+/* Ocultar desplegable 2 */
+.angular .desplegable1 .desplegable2{
+    display: none;
+}
+/* Mostrar desplegable 2 */
+.angular li:hover .desplegable1 li:hover .desplegable2{
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    padding: 1rem 1.5rem 2rem 1rem;
+    width: 150px;
+    z-index: 1;
+    background-color: transparent; 
+}
+
+/* Estructura logo */
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    background-color: rgb(44, 47, 49);
+    height: 80px;
+    box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
+    border-radius: 0.5rem 0.5rem 0 0; 
+}
+
+.logo img {
+    width: 100px;
+    height: 75px;
+}
+ 
+/* Encabezado de primer nivel */
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    font-size: 30px;
+    letter-spacing: 5px;
+
+    text-shadow: -1px -1px 0px #2196f3,
+        3px 3px 0px #2196f3,
+        6px 6px 0px #00000055;
+}
+
+p {
+    margin: 20px 0 0 20px;
+    color: black;
+    font-weight: bolder;
+}
+/* Enlaces */
+a {
+    color: white;
+    text-shadow: 
+  -1px -1px 0 black,
+   1px -1px 0 black,
+  -1px  1px 0 black,
+   1px  1px 0 black;
+   cursor: pointer;
+}
+
+.a:hover {
+    padding: .5rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 1px 1px 1px black;
+    background-color: rgb(16, 17, 18);
+    display: block;
+    transition: all 1s ease;
+}
+.login a {
+    
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.login a:hover {
+    border-radius: 0.5rem;
+    box-shadow: inset 1px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
