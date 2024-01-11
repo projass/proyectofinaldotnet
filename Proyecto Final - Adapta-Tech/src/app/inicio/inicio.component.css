@@ -1,0 +1,8 @@
+h1, h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: -1px -1px 0 rgb(92, 97, 97), 1px -1px 0 rgb(54, 57, 57), 1px 1px rgb(0, 0, 0), -1px 1px 0 rgb(81, 86, 86);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
