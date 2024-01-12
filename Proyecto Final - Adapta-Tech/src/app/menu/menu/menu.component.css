@@ -37,9 +37,8 @@
  /* Barra desplegable */
  .angular {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 200px;
     background-color: rgb(44, 47, 49);
     color: white;
     font-size: large;
@@ -156,4 +155,26 @@ a {
 .login a:hover {
     border-radius: 0.5rem;
     box-shadow: inset 1px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* para hacerlo responsive */
+
+@media only screen and (max-width: 1080px) {
+    .secciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: "menu menu"
+                             "login logo";
+        gap: 1rem;
+      }
+      .menu {
+        /* grid-area: menu; */
+        grid-column: 1 / span 3;
+    }
+    .login {
+        grid-area: login;
+    }
+    .logo {
+        grid-area: logo;
+    }
 }
