@@ -17,5 +17,9 @@ export const routes: Routes = [
     { path: 'formacion', component: FormacionComponent},
     { path: 'inclusion', component: InclusionComponent},
     { path: 'ocio', component: OcioComponent},
+    { path: 'visual', component: OcioComponent},
+    { path: 'fisica', component: OcioComponent},
+    { path: 'auditiva', component: OcioComponent},
+    { path: 'cognitiva', component: OcioComponent},
     { path: '**', component: NotfoundComponent }
   ];
