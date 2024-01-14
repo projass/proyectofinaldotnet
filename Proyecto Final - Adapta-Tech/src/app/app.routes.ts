@@ -11,6 +11,7 @@ import { VisualComponent } from './Accesibilidad/visual/visual.component';
 import { FisicaComponent } from './Accesibilidad/Fisica/fisica.component';
 import { AuditivaComponent } from './Accesibilidad/auditiva/auditiva.component';
 import { CognitivaComponent } from './Accesibilidad/cognitiva/cognitiva.component';
+import { ColaboradoresComponent } from './Colaboradores/colaboradores.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -25,5 +26,6 @@ export const routes: Routes = [
     { path: 'fisica', component: FisicaComponent},
     { path: 'auditiva', component: AuditivaComponent},
     { path: 'cognitiva', component: CognitivaComponent},
+    { path: 'colaboradores', component: ColaboradoresComponent},
     { path: '**', component: NotfoundComponent }
   ];
