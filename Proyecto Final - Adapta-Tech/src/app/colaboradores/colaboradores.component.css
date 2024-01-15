@@ -1,0 +1,39 @@
+body {
+    margin: 10rem 0 5rem 0;
+}
+.deslizador {
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.deslizador .diapositiva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+    width: calc(200px * 12);
+    background-color: transparent;
+    gap: 10px;
+}
+
+.deslizador .dia {
+    width: 250px;
+    display: flex;
+}
+
+.deslizador .dia img {
+    width: 220px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 6))
+    }
+}
