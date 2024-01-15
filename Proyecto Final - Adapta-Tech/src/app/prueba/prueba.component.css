@@ -1,4 +1,4 @@
-
+/* 
 #btn-mas{
     display: none;
 }
@@ -19,7 +19,7 @@
     border-radius: 50%;
     box-shadow: 5px 1px 10px rgba(29, 25, 25, 0.4);
     transition: all 500ms ease;
-    z-index: 9999;
+    z-index: 99999;
 }
 .opciones a {
     display: flex;
@@ -52,4 +52,4 @@
 #btn-mas:checked ~ .btn-mas label{
     transform: rotate(135deg);
     font-size: 25px;
-}
+} */

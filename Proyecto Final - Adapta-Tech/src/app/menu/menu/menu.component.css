@@ -96,13 +96,19 @@
 .logo {
     grid-area: logo;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 99%;
     background-color: rgb(44, 47, 49);
     height: 80px;
     box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
     border-radius: 0.5rem 0.5rem 0 0; 
+}
+.logo .container {
+    z-index: 9999;
+    border: 4px solid red;
+    padding: 20px;
+    
 }
 
 .logo img {
@@ -161,20 +167,21 @@ a {
 
 /* para hacerlo responsive */
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1180px) {
     .secciones {
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-areas: "menu menu"
                              "login logo";
         gap: 1rem;
+        justify-content: center;
       }
       .menu {
-        /* grid-area: menu; */
-        grid-column: 1 / span 3;
+        grid-area: menu;
     }
     .login {
         grid-area: login;
+        margin-left: 5px;
     }
     .logo {
         grid-area: logo;
