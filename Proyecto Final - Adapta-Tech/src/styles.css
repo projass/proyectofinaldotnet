@@ -7,9 +7,5 @@
   }
 
   body {
-    
-    background-image: url(./assets/fondoapp.avif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: beige;
   }
