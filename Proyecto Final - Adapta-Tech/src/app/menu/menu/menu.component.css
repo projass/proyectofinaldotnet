@@ -7,10 +7,53 @@
 .secciones {
     display: grid;
     grid-template-columns: 250px 1fr 250px;
-    grid-template-areas: "login menu logo";
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+                    "colaboradores colaboradores colaboradores"
+                    "login menu logo";
     gap: 1rem;
   }
+.colaboradores{
+    grid-area: colaboradores;
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+    
+}
+.deslizador {
+    margin: 0;
+    width: 100vw;
+    overflow: hidden;
+    background-color: white;
+}
 
+.deslizador .diapositiva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+    width: calc(200px * 12);
+    background-color: transparent;
+    gap: 10px;
+}
+
+.deslizador .dia {
+    width: 250px;
+    display: flex;
+}
+
+.deslizador .dia img {
+    width: 220px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 6))
+    }
+}
 /* Estructura login */
   .login {
     grid-area: login;
@@ -64,7 +107,6 @@
     background-color: rgba(44, 47, 49, 0.85);  
     margin-top: auto;
     animation: rotar 0.5s ease backwards;
-    z-index: 99;
 }
 
 @keyframes rotar {
