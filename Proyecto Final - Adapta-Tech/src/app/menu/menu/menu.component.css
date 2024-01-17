@@ -4,10 +4,10 @@
     padding: 0;
     text-decoration: none;
 }
-.abrir,
+/* .abrir,
 .cerrar {
     display: none;
-}
+} */
 /* Grid */
 .secciones {
     display: grid;
@@ -192,7 +192,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .secciones {
         display: grid;
         grid-template-columns: 1fr;
@@ -216,7 +216,6 @@ a {
         width: 99%;
         background-color: rgb(44, 47, 49);
         height: 80px;
-        box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
         border-radius: 0.5rem 0.5rem 0 0; 
     }
     .abrir,
@@ -255,11 +254,13 @@ a {
     }
     .angular {
         flex-direction: column;
-        align-items: start;
+        align-items: center;
+        background-color:darkcyan;
     }
     .angular li a {
         text-decoration: none;
         color: #fff;
+        background-color:darkcyan;
     }
     .angular li:hover .desplegable1 {
         display: block;
@@ -273,4 +274,4 @@ a {
         margin-top: auto;
         animation: rotar 0.5s ease backwards;
     }
-}
+} */

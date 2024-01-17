@@ -11,6 +11,6 @@ import { FooterComponent } from './menu/footer/footer.component';
     styleUrl: './app.component.css',
     imports: [CommonModule, RouterOutlet, MenuComponent, FooterComponent]
 })
-export class AppComponent {
+export class AppComponent{
   title = 'MiProyecto';
 }
