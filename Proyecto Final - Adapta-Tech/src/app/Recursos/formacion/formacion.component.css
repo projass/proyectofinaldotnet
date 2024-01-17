@@ -1,51 +1,99 @@
-
+/* Estilo general del cuerpo de la página */
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#Texto {
-    margin: 0 200px; 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+/* Estilo para centrar el texto de los encabezados h1 */
+h1 {
+    text-align: center; /* Centrar el texto del h1 */
 }
-.image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+
+/* Estilo para agregar margen inferior a los párrafos */
+p {
+    margin-bottom: 15px;
 }
-.image-container img {
-    max-width: 50%;
-    height: auto;
+
+/* Estilo específico para un elemento con el ID "Texto" */
+#Texto {
+    font-size: 18px;
+    font-weight: bold;
 }
-.image-container p {
-    margin-top: 10px;
-    text-align: center;
+
+/* Estilo para cambiar el color de la fuente de elementos <b> a azul */
+b {
+    color: #28A745; /* Color azul, puedes cambiarlo según tus preferencias */
 }
+
+/* Estilo para los enlaces sin subrayado y con un borde inferior verde */
+u {
+    text-decoration: none;
+    border-bottom: 2px solid #28A745; /* Color verde, puedes cambiarlo según tus preferencias */
+}
+
+/* Estilo para los enlaces dentro de párrafos con margen superior */
+p > u {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* Estilo para crear un efecto de subrayado gradual al pasar el ratón sobre los enlaces */
+p > u::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #28A745; /* Color verde, puedes cambiarlo según tus preferencias */
+    transition: width 0.3s;
+}
+
+/* Estilo para ampliar el subrayado al pasar el ratón sobre los enlaces */
+p > u:hover::after {
+    width: 100%;
+}
+
+/* Estilo para centrar el contenido de los contenedores de botones */
 .button-container {
     text-align: center;
-    margin-top: 20px;
 }
- .button-container button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none; /* Agregado para eliminar el contorno predeterminado al hacer clic */
+
+/* Estilo para el contenedor principal que utiliza un diseño flexbox y justifica el espacio entre elementos */
+.container {
+    display: flex;
+    justify-content: space-between; /* Ajusta el espacio entre elementos */
 }
-  
-  .button-container button:hover {
-    background-color: #0af316;
+
+/* Estilo para los contenedores de imágenes, centrando el contenido y estableciendo un ancho específico */
+.image-container {
+    text-align: center; /* Centrar el contenido de cada contenedor */
+    width: 30%; /* Ajusta el ancho de cada contenedor según tus necesidades */
 }
-  
-.button-container button:active {
-    background-color: #367938;
+
+/* Estilo para las imágenes dentro de los contenedores, asegurándose de que no excedan el ancho del contenedor */
+.image-container img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
 }
-  
+
+/* Estilo para centrar el contenido de los contenedores de botones */
+.button-container {
+    text-align: center;
+}
+/* Estilo para el botón "Ver más" */
+.button-container button {
+    background-color: #28A745; /* Color verde para el fondo del botón */
+    color: #ffffff; /* Color blanco para el texto del botón */
+    padding: 10px 20px; /* Ajusta el relleno del botón según tus preferencias */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Agrega una transición al color de fondo */
+    border-radius: 5px;/* Agrega esquinas redondeadas al botón */
+}
+
+/* Cambia el color de fondo al pasar el cursor sobre el botón */
+.button-container button:hover {
+    background-color: #218838; /* Color verde oscuro al pasar el cursor */
+}
