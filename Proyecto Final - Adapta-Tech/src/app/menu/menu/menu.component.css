@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 /* .abrir,
 .cerrar {
@@ -23,7 +24,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    background-color: rgb(49, 48, 44);
+    background-color: #2667c9dc;
     color: white;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -44,7 +45,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(44, 47, 49);
+    background-color: #2667c9dc;
     color: white;
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -66,10 +67,11 @@
     padding: 1rem 1.5rem 2rem 1rem;
     width: 250px;
     height: auto;
-    border-top: 5px solid rgb(5, 20, 221);
-    background-color: rgba(44, 47, 49, 0.85);  
+    border-top: 5px solid rgb(52, 58, 235);
+    background-color: #2667c9dc;  
     margin-top: auto;
     animation: rotar 0.5s ease backwards;
+    border-radius: 0 0 10px 10px;
 }
 
 @keyframes rotar {
@@ -103,7 +105,7 @@ Mostrar desplegable 2
     justify-content: space-around;
     align-items: center;
     width: 99%;
-    background-color: rgb(44, 47, 49);
+    background-color: #2667c9dc;
     height: 80px;
     box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
     border-radius: 0.5rem 0.5rem 0 0; 
@@ -153,7 +155,7 @@ a {
     padding: .5rem;
     border-radius: 0.5rem;
     box-shadow: inset 1px 1px 1px black;
-    background-color: rgb(16, 17, 18);
+    background-color: rgb(52, 58, 235);
     font-size: small;
     display: block;
     transition: all 1s ease;
