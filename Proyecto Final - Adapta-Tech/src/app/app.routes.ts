@@ -30,5 +30,4 @@ export const routes: Routes = [
     { path: 'colaboradores', component: ColaboradoresComponent},
     { path: 'contacto', component: ContactoComponent },
     { path: '**', component: NotfoundComponent }
-    
   ];
