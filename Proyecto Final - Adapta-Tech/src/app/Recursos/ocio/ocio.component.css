@@ -72,6 +72,11 @@ span {
 .imagenContenedor img {
     width: 250px;
     height: 150px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.imagenContenedor img:hover {
+    box-shadow:  0 0 0 1px black;
 }
 
 .botonContenedor button {

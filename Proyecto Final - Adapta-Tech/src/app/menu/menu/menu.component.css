@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 250px 1fr 250px;
     grid-template-areas: "login menu logo";
-    gap: 1rem;
+    /* gap: 0.1rem; */
   }
 
 /* Estructura login */
@@ -30,8 +30,8 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     height: 80px;
-    box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
-    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 0 5px 5px 0px black;
+    /* border-radius: 0.5rem 0.5rem 0 0; */
 }
 
 /* Estructura menú */
@@ -50,10 +50,12 @@
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
-    box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
-    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 0 5px 5px 0px black;
+    /* border-radius: 0.5rem 0.5rem 0 0; */
     height: 80px;
     width: 100%;
+    border-left: 2px solid black;
+    border-right: 2px solid black; 
 }
 
 /* Ocultar desplegable 1 */
@@ -104,11 +106,11 @@ Mostrar desplegable 2
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 99%;
+    width: 100%;
     background-color: #2667c9dc;
     height: 80px;
-    box-shadow: -1px 0 1px black, 1px 0 5px 1px black;
-    border-radius: 0.5rem 0.5rem 0 0; 
+    box-shadow: 0 5px 5px 0px black;
+    /* border-radius: 0.5rem 0.5rem 0 0;  */
 }
 .logo .container {
     z-index: 9999;
