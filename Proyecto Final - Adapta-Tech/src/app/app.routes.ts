@@ -13,12 +13,15 @@ import { AuditivaComponent } from './Accesibilidad/auditiva/auditiva.component';
 import { CognitivaComponent } from './Accesibilidad/cognitiva/cognitiva.component';
 import { ColaboradoresComponent } from './colaboradores/colaboradores.component';
 import { ContactoComponent } from './contacto/contacto.component'
+import { RegistroComponent } from './menu/registro/registro.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
     { path: 'inicio', component: InicioComponent },
     { path: 'menu', component: MenuComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'registro', component: RegistroComponent },
+
     { path: 'ayudas', component: AyudasComponent},
     { path: 'formacion', component: FormacionComponent},
     { path: 'inclusion', component: InclusionComponent},
