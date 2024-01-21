@@ -14,3 +14,54 @@ header {
 main {
     margin: 3rem 0 10rem 0;
 }
+
+/****/
+
+.galletitas {
+    width: 320px;
+    height: 500px;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: justify;
+    z-index: 9999;
+}
+
+.galletitas .aceptar {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.galletitas a {
+    color: black;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.galletitas .aceptar a {
+    color:white;
+    width: 7rem;
+    padding: 10px 20px;
+    background-color: red;
+    box-shadow: 0 1px 2px 1px black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.galletitas h2 {
+    text-align: center;
+}
+
+.contenedor-cookies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(15px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+}
