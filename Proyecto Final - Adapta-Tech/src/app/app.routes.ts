@@ -14,6 +14,8 @@ import { CognitivaComponent } from './Accesibilidad/cognitiva/cognitiva.componen
 import { ColaboradoresComponent } from './colaboradores/colaboradores.component';
 import { ContactoComponent } from './contacto/contacto.component'
 import { RegistroComponent } from './menu/registro/registro.component';
+import { MedicacionComponent } from './Herramientas/Medicacion/medicacion.component';
+import { CalculadoraComponent } from './Herramientas/Calculadora/calculadora.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -32,5 +34,7 @@ export const routes: Routes = [
     { path: 'cognitiva', component: CognitivaComponent},
     { path: 'colaboradores', component: ColaboradoresComponent},
     { path: 'contacto', component: ContactoComponent },
+    { path: 'calcu', component: CalculadoraComponent },
+    { path: 'medic', component: MedicacionComponent },
     { path: '**', component: NotfoundComponent }
   ];
