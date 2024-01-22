@@ -18,6 +18,10 @@ main {
 /****/
 
 .galletitas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 320px;
     height: 550px;
     background-color: white;
