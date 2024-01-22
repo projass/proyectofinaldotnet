@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-visual',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './visual.component.html',
   styleUrl: './visual.component.css'
 })

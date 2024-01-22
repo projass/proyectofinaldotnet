@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-cognitiva',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './cognitiva.component.html',
   styleUrl: './cognitiva.component.css'
 })
