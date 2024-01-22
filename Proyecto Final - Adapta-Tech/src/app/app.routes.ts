@@ -16,6 +16,7 @@ import { ContactoComponent } from './contacto/contacto.component'
 import { RegistroComponent } from './menu/registro/registro.component';
 import { MedicacionComponent } from './Herramientas/Medicacion/medicacion.component';
 import { CalculadoraComponent } from './Herramientas/Calculadora/calculadora.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -33,6 +34,7 @@ export const routes: Routes = [
     { path: 'auditiva', component: AuditivaComponent},
     { path: 'cognitiva', component: CognitivaComponent},
     { path: 'colaboradores', component: ColaboradoresComponent},
+    { path: 'equipo', component: EquipoComponent},
     { path: 'contacto', component: ContactoComponent },
     { path: 'calcu', component: CalculadoraComponent },
     { path: 'medic', component: MedicacionComponent },
