@@ -4,12 +4,11 @@ body {
   display: block;
 }
 
-
 table {
   margin: auto;
   background-color: #2667c9dc;
-  width: 300px;
-  height: 400px;
+  width: 330px;
+  height: 500px;
   text-align: center;
   border-radius: 20px;
   padding: 50px;
@@ -17,12 +16,6 @@ table {
   
 }
 
-#calculator {
-  position: fixed;
-  max-width: 60%;
-  left: 58%;
-  top: 10%;
-}
 h1{
   color:white;
   font-size: 25px;
@@ -33,42 +26,16 @@ h1{
 input {
   border: 0 solid #000;
   color: #495069;
-  background-color: #3ff707;
+  background-color: #16d6f8;
   border-radius: 4px;
   width: 60px;
   height: 50px;
   float: left;
-  margin: 5px;
+  margin: 10px;
   margin-bottom: 20px;
   position:static;
   font-size: 20px;
   box-shadow: 0 4px #644294;
-}
-input:hover {
-  border: 0 solid #000;
-  color: #495069;
-  background-color: #8F5FD4;
-  border-radius: 4px;
-  width: 60px;
-  height: 50px;
-  float: left;
-  margin: 5px;
-  font-size: 20px;
-  box-shadow: 0 4px #644294;
-}
-
-input:active {
-  top: 4px;
-  border: 0 solid #000;
-  color: #495069;
-  background-color: #8F5FD4;
-  border-radius: 4px;
-  width: 60px;
-  height: 50px;
-  float: left;
-  margin: 5px;
-  font-size: 20px;
-  box-shadow: none;
 }
 
 #answer {
@@ -79,7 +46,6 @@ input:active {
   background-color: #f7f2f2;
   float: inherit;
   background-color: #F1FAEB;
-  float:inherit;/*este left*/
 }
 
 #answer:hover {
@@ -103,12 +69,6 @@ input:active {
 
 .operator {
   background-color: #f1ff92;
-  position:static;/*este relative*/
-}
-
-.operator:hover {
-  background-color: #E7F56B;
-  box-shadow: 0 4px #B7C259;
 }
 
 .operator:active {
@@ -117,20 +77,12 @@ input:active {
 }
 
 #clear {
-  margin-left: 14px;
-  /* float: left; */
-  position:static;
-  float: left;
-  position:static;/*este*/
-  display: block;
   background-color:#ff9fa8;
   margin-bottom: 15px;
-  color: white;/*este*/
+  color: white;
 }
 
 #clear:hover {
-  margin-left: 14px;
-  /* float: left; */
   display: block;
   background-color: #F297A0;
   margin-bottom: 15px;
