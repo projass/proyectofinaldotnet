@@ -78,21 +78,23 @@
     transform: rotateY(360deg); 
   }
 }
-/* Ocultar desplegable 2
+
+/* Ocultar desplegable 2 */
 .angular .desplegable1 .desplegable2{
     display: none;
 }
-Mostrar desplegable 2 
+
+/* Mostrar desplegable 2  */
 .angular li:hover .desplegable1 li:hover .desplegable2{
     display: block;
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: 100px;
     padding: 1rem 1.5rem 2rem 1rem;
     width: 150px;
     z-index: 1;
-    background-color: transparent; 
-} */
+    background-color: #2667c9dc; 
+}
 /* Estructura logo */
 .logo {
     grid-area: logo;
