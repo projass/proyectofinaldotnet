@@ -4,6 +4,7 @@ body {
   display: block;
 }
 
+
 table {
   margin: auto;
   background-color: #2667c9dc;
@@ -25,13 +26,17 @@ table {
 h1{
   color:white;
   font-size: 25px;
-  margin-top: 20px;
+  margin-top: 5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 input {
+<<<<<<< HEAD
+  outline: 0; 
+=======
   outline: 0;
   position:static;
+>>>>>>> b1f99e37ae054b0fce36199c8dea49db17bdc3c3
   left: 5px;
   top: 5px;
   border: 0;
@@ -40,10 +45,10 @@ input {
   border-radius: 4px;
   width: 60px;
   height: 50px;
-  float:left;
+  float: left;
   margin: 5px;
   margin-bottom: 20px;
- 
+  position:static;
   font-size: 20px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 }
@@ -55,10 +60,10 @@ input {
   border-radius: 4px;
   width: 60px;
   height: 50px;
-  float:left;
+  float: left;
   margin: 5px;
   margin-bottom: 20px;
-  
+  position:static;
   font-size: 20px;
   box-shadow: 0 4px #644294;
 }
@@ -90,14 +95,21 @@ input:active {
 }
 
 #answer {
+  margin-top: 30px;
   width: 270px;
   font-size: 26px;
   text-align: center;
+<<<<<<< HEAD
+  background-color: #f7f2f2;
+  float: inherit;
+=======
   background-color: #F1FAEB;
   float:inherit;/*este left*/
+>>>>>>> b1f99e37ae054b0fce36199c8dea49db17bdc3c3
 }
 
 #answer:hover {
+  margin-top: 30px;
   width: 270px;
   font-size: 26px;
   text-align: center;
@@ -106,6 +118,7 @@ input:active {
 }
 
 #answer:active {
+  margin-top: 30px;
   top: 5px;
   width: 270px;
   font-size: 26px;
@@ -130,8 +143,14 @@ input:active {
 }
 
 #clear {
+<<<<<<< HEAD
+  margin-left: 14px;
+  /* float: left; */
+  position:static;
+=======
   float: left;
   position:static;/*este*/
+>>>>>>> b1f99e37ae054b0fce36199c8dea49db17bdc3c3
   display: block;
   background-color:#ff9fa8;
   margin-bottom: 15px;
@@ -139,7 +158,8 @@ input:active {
 }
 
 #clear:hover {
-  float: left;
+  margin-left: 14px;
+  /* float: left; */
   display: block;
   background-color: #F297A0;
   margin-bottom: 15px;
@@ -149,11 +169,11 @@ input:active {
 
 
 #clear:active {
-  float: left;
+  margin-left: 14px;
+  /* float: left; */
   top: 4px;
   display: block;
   background-color: #F297A0;
   margin-bottom: 15px;
   box-shadow: none;
 }
-
