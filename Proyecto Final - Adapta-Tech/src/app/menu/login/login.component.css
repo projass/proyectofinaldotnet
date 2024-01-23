@@ -87,8 +87,6 @@
     display: block;
     text-align: center;
     width: 100%;
-    opacity: 0.70;
-    filter: alpha(opacity=70);
     padding:20px 20px 20px 50px;
     box-sizing: border-box;
 }
@@ -106,7 +104,7 @@
 hr {
     border-top: 1px solid #8c8b8b;
 	border-bottom: 1px solid #dfcdc3;
-    
+    opacity: 1;
 }
 .pie-form {
     font-size: 90%;
