@@ -31,29 +31,6 @@ h1{
 }
 
 input {
-<<<<<<< HEAD
-  outline: 0; 
-=======
-  outline: 0;
-  position:static;
->>>>>>> b1f99e37ae054b0fce36199c8dea49db17bdc3c3
-  left: 5px;
-  top: 5px;
-  border: 0;
-  color: #25315b;
-  background-color: beige;
-  border-radius: 4px;
-  width: 60px;
-  height: 50px;
-  float: left;
-  margin: 5px;
-  margin-bottom: 20px;
-  position:static;
-  font-size: 20px;
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-}
-
-input {
   border: 0 solid #000;
   color: #495069;
   background-color: #3ff707;
@@ -99,13 +76,10 @@ input:active {
   width: 270px;
   font-size: 26px;
   text-align: center;
-<<<<<<< HEAD
   background-color: #f7f2f2;
   float: inherit;
-=======
   background-color: #F1FAEB;
   float:inherit;/*este left*/
->>>>>>> b1f99e37ae054b0fce36199c8dea49db17bdc3c3
 }
 
 #answer:hover {
@@ -143,14 +117,11 @@ input:active {
 }
 
 #clear {
-<<<<<<< HEAD
   margin-left: 14px;
   /* float: left; */
   position:static;
-=======
   float: left;
   position:static;/*este*/
->>>>>>> b1f99e37ae054b0fce36199c8dea49db17bdc3c3
   display: block;
   background-color:#ff9fa8;
   margin-bottom: 15px;
