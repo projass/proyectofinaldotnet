@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: scroll 3600s linear infinite;
+    animation: scroll 50s linear infinite;
     width: calc(200px * 26);
     background-color: transparent;
     gap: 10px;

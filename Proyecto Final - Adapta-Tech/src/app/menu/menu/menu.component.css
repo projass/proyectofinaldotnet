@@ -5,16 +5,11 @@
     text-decoration: none;
     list-style: none;
 }
-/* .abrir,
-.cerrar {
-    display: none;
-} */
-/* Grid */
+
 .secciones {
     display: grid;
     grid-template-columns: 250px 1fr 250px;
     grid-template-areas: "login menu logo";
-    /* gap: 0.1rem; */
   }
 
 /* Estructura login */
@@ -31,7 +26,6 @@
     font-weight: bolder;
     height: 80px;
     box-shadow: 0 5px 5px 0px black;
-    /* border-radius: 0.5rem 0.5rem 0 0; */
 }
 
 /* Estructura menú */
@@ -51,7 +45,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     box-shadow: 0 5px 5px 0px black;
-    /* border-radius: 0.5rem 0.5rem 0 0; */
     height: 80px;
     width: 100%;
     border-left: 2px solid black;
@@ -110,10 +103,8 @@ Mostrar desplegable 2
     background-color: #2667c9dc;
     height: 80px;
     box-shadow: 0 5px 5px 0px black;
-    /* border-radius: 0.5rem 0.5rem 0 0;  */
 }
 .logo .container {
-    z-index: 9999;
     border: 4px solid red;
     padding: 20px;
     
@@ -195,87 +186,3 @@ a {
         grid-area: logo;
     }
 }
-
-/* @media only screen and (max-width: 600px) {
-    .secciones {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: "login"
-                             "logo"
-                             "menu";  
-        justify-content: center;      
-      }
-    .login {
-        grid-area: login;
-    }
-    .logo {
-        grid-area: logo;
-    }
-    .menu {
-        grid-area: menu;
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 99%;
-        background-color: rgb(44, 47, 49);
-        height: 80px;
-        border-radius: 0.5rem 0.5rem 0 0; 
-    }
-    .abrir,
-    .cerrar {
-        display: block;
-        border: 0;
-        font-size: 2rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    .abrir,
-    .cerrar {
-        color: white;
-    }
-    .abrir:hover {
-        color: aquamarine;
-    }
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 2rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    .angular {
-        flex-direction: column;
-        align-items: center;
-        background-color:darkcyan;
-    }
-    .angular li a {
-        text-decoration: none;
-        color: #fff;
-        background-color:darkcyan;
-    }
-    .angular li:hover .desplegable1 {
-        display: block;
-        position: absolute;
-        left: 150px;
-        padding: 1rem 1.5rem 2rem 1rem;
-        width: 250px;
-        height: auto;
-        border-top: 5px solid rgb(5, 20, 221);
-        background-color: rgba(44, 47, 49, 0.85);  
-        margin-top: auto;
-        animation: rotar 0.5s ease backwards;
-    }
-} */
