@@ -53,11 +53,8 @@ h2 {
   height: 300px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  opacity: 1;
 }
 .tarjetaInfo {
-  position:relative;
-
   z-index: 2;
   background-color: #fff;
   padding: 15px 10px;
@@ -66,8 +63,6 @@ h2 {
 .tarjeta:hover .tarjetaInfo {
   background-color: transparent;
   font-weight:600;
-
-  
 }
 
 .tarjetaRole {
@@ -110,5 +105,5 @@ h2 {
 .tarjeta:hover .tarjetaImagenHover {
   display: block;
     height: 100%;
-    opacity: 1;
+    opacity: 0.3;
 }

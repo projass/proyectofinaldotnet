@@ -10,6 +10,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 50vh;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .cuadro {
   border-radius: 2rem;
@@ -30,4 +36,42 @@ h1, h2 {
     font-weight: bolder;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.contacto {
+  color: blue;
+}
+
+.texto {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.lista {
+  font-weight: normal;
+  line-height: 30px;
+  text-align: justify;
+  list-style: circle;
+}
+
+strong {
+  color: blue;
+}
+
+span {
+  font-weight: 720;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
   

@@ -20,17 +20,17 @@
   background:none
 }
 .lista-abas {
-  position:relative;
+  position:static;
   font-size:0;
   text-align:left;
   color:#666
 }
 .lista-abas > input {
-  position:absolute;
+  position:static;
   display:none
 }
 .lista-abas > label {
-  position:relative;
+  position:static;
   z-index:1;
   display:inline-block;
   box-sizing:border-box;
@@ -66,7 +66,7 @@
 }
 .lista-abas > ul {
   list-style:none;
-  position:relative;
+  position:static;
   display:block;
   font-size:13px
 }
@@ -74,21 +74,21 @@
   position:absolute;
   top:0;
   left:0;
-  width:626px;
+  width:326px;
   overflow:auto;
   padding:20px 25px 25px;
   background:rgba(255, 255, 255, .9);
   box-sizing:border-box;
   -moz-box-sizing:border-box;
   opacity:0;
-  /* -o-transform-origin:0% 0%;
+   -o-transform-origin:0% 0%;
   -ms-transform-origin:0% 0%;
   -moz-transform-origin:0% 0%;
   -webkit-transform-origin:0% 0%;
   -o-transition:opacity .8s, -o-transform .8s;
   -ms-transition:opacity .8s, -ms-transform .8s;
   -moz-transition:opacity .8s, -moz-transform .8s;
-  -webkit-transition:opacity .8s, -webkit-transform .8s */
+  -webkit-transition:opacity .8s, -webkit-transform .8s 
 }
 .lista-abas > .aba-1:checked ~ ul > .aba-1, 
 .lista-abas > .aba-2:checked ~ ul > .aba-2, 
@@ -112,7 +112,7 @@
 }
 .amimacao-flip > ul {
   perspective:2000px;
-  /* -o-perspective:2000px;
+   -o-perspective:2000px;
   -ms-perspective:2000px;
   -moz-perspective:2000px;
   -webkit-perspective:2000px;
@@ -120,15 +120,15 @@
   -o-perspective-origin:50% 50%;
   -ms-perspective-origin:50% 50%;
   -moz-perspective-origin:50% 50%;
-  -webkit-perspective-origin:50% 50% */
+  -webkit-perspective-origin:50% 50% 
 }
-/* .amimacao-flip > ul > li {
+ .amimacao-flip > ul > li {
   -o-transform:rotatex(-90deg);
   -ms-transform:rotatex(-90deg);
   -moz-transform:rotatex(-90deg);
   -webkit-transform:rotatex(-90deg)
-} */
-/* .amimacao-flip > .aba-1:checked ~ ul > .aba-1, 
+} 
+ .amimacao-flip > .aba-1:checked ~ ul > .aba-1, 
 .amimacao-flip > .aba-2:checked ~ ul > .aba-2, 
 .amimacao-flip > .aba-3:checked ~ ul > .aba-3, 
 .amimacao-flip > .aba-4:checked ~ ul > .aba-4,
@@ -143,7 +143,7 @@
  -ms-transition-delay:0.2s;
  -moz-transition-delay:0.2s;
  -webkit-transition-delay:0.2s 
-} */
+} 
 
 
 
