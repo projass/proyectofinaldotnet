@@ -30,7 +30,7 @@ h1{
 }
 
 input {
-  /* outline: 0; */
+  outline: 0;
   position:static;
   left: 5px;
   top: 5px;
@@ -62,12 +62,24 @@ input {
   font-size: 20px;
   box-shadow: 0 4px #644294;
 }
+input:hover {
+  border: 0 solid #000;
+  color: #495069;
+  background-color: #8F5FD4;
+  border-radius: 4px;
+  width: 60px;
+  height: 50px;
+  float: left;
+  margin: 5px;
+  font-size: 20px;
+  box-shadow: 0 4px #644294;
+}
 
 input:active {
   top: 4px;
   border: 0 solid #000;
   color: #495069;
-  background-color: #5bd635;
+  background-color: #8F5FD4;
   border-radius: 4px;
   width: 60px;
   height: 50px;
@@ -81,8 +93,8 @@ input:active {
   width: 270px;
   font-size: 26px;
   text-align: center;
-  background-color: #f7f2f2;
-  float:inherit;
+  background-color: #F1FAEB;
+  float:inherit;/*este left*/
 }
 
 #answer:hover {
@@ -104,7 +116,7 @@ input:active {
 
 .operator {
   background-color: #f1ff92;
-  position:static;
+  position:static;/*este relative*/
 }
 
 .operator:hover {
@@ -119,11 +131,11 @@ input:active {
 
 #clear {
   float: left;
-  position:static;
+  position:static;/*este*/
   display: block;
-  background-color: #fd071f;
+  background-color:#ff9fa8;
   margin-bottom: 15px;
-  color: white;
+  color: white;/*este*/
 }
 
 #clear:hover {
