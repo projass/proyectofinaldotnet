@@ -1,5 +1,7 @@
 body {
   background-color: beige;
+  position:sticky;
+  display: block;
 }
 
 table {
@@ -15,7 +17,7 @@ table {
 }
 
 #calculator {
-  position: absolute;
+  position: fixed;
   max-width: 60%;
   left: 58%;
   top: 10%;
@@ -46,7 +48,7 @@ input {
   box-shadow: 0 4px rgba(0,0,0,0.2);
 }
 
-input:hover {
+input {
   border: 0 solid #000;
   color: #495069;
   background-color: #3ff707;
