@@ -1,29 +1,89 @@
-<body>   
-    <div class="contenedor"> 
-        <div class="contenedorcentrado">
-            <div class="login">
-                <form class="loginform">
-                    <label for="usuario">Usuario</label>
-                    <input class="usuario" type="text" name="usuario" placeholder="Usuario" required>
-                    
-                    <label for="password">Contraseña</label>
-                    <input class="password" type="password" placeholder="Contraseña" name="password" required>
-                    
-                    <button>Login</button>
-                </form>                
-            </div>
-        </div>
+<body>
+  <div class="contenedor">
+    <div class="contenedorcentrado">
+      <div class="login">
+        <form id="form" class="form tscroll">
+          <h2>Regístrate en nuestra web</h2>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Introduce tu email" />
+            <small>Mensaje de error</small>
+          </div>
+          <div class="form-control">
+            <label for="alias">Alias de usuario</label>
+            <input type="text" id="alias" placeholder="Introduce tu alias" />
+            <small>Mensaje de error</small>
+          </div>
+          <div class="form-control">
+            <label for="username">Nombre de Usuario/a</label>
+            <input type="text" id="username" placeholder="Introduce nombre" />
+            <small>Mensaje de error</small>
+          </div>
+          <div class="form-control">
+            <label for="apellidos">Apellido/s</label>
+            <input
+              type="text"
+              id="apellidos"
+              placeholder="Introduce apellidos"
+            />
+            <small>Mensaje de error</small>
+          </div>
+
+          <div class="form-control">
+            <label for="telefono">Número de teléfono</label>
+            <input
+              type="text"
+              id="telefono"
+              placeholder="Introduce tu número de teléfono"
+            />
+            <small>Mensaje de error</small>
+          </div>
+          <div class="form-control">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2018-07-22"
+              min="1950-01-01"
+              max="2050-12-31"
+            />
+          </div>
+          <div class="form-control">
+            <label for="imagen">Imagen de Perfil</label>
+            <input type="file" id="imagen" placeholder="Introduzca password" />
+            <small>Mensaje de error</small>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Introduzca password"
+            />
+            <small>Mensaje de error</small>
+          </div>
+          <div class="form-control">
+            <label for="password2">Confirme Password</label>
+            <input
+              type="password"
+              id="password2"
+              placeholder="Repita la password"
+            />
+            <small>Mensaje de error</small>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
         <div class="derecho">
-            <div class="titulo">
-                Bienvenido
-            </div>
-            <hr>
-            <div class="pie-form">
-                <a href="#">¿Perdiste tu contraseña?</a>
-                <a href="#">¿No tienes Cuenta? Registrate</a>
-                <hr>
-                <a href="#">« Volver</a>
-            </div>
+          <div class="titulo">Bienvenido</div>
+          <hr />
+          <div class="pie-form">
+            <a href="#">¿Perdiste tu contraseña?</a>
+            <hr />
+            <a href="#">« Volver</a>
+          </div>
         </div>
-    </div>   
+      </div>
+    </div>
+  </div>
 </body>

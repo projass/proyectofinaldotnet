@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
 @Component({
-  selector: 'app-registro',
+  selector: "app-registro",
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './registro.component.html',
-  styleUrl: './registro.component.css'
+  templateUrl: "./registro.component.html",
+  styleUrl: "./registro.component.css",
 })
-export class RegistroComponent {
-
-}
+export class RegistroComponent {}
