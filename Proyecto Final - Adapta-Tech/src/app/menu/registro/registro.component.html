@@ -1,89 +1,56 @@
-<body>
-  <div class="contenedor">
-    <div class="contenedorcentrado">
-      <div class="login">
-        <form id="form" class="form tscroll">
-          <h2>Regístrate en nuestra web</h2>
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Introduce tu email" />
-            <small>Mensaje de error</small>
-          </div>
-          <div class="form-control">
-            <label for="alias">Alias de usuario</label>
-            <input type="text" id="alias" placeholder="Introduce tu alias" />
-            <small>Mensaje de error</small>
-          </div>
-          <div class="form-control">
-            <label for="username">Nombre de Usuario/a</label>
-            <input type="text" id="username" placeholder="Introduce nombre" />
-            <small>Mensaje de error</small>
-          </div>
-          <div class="form-control">
-            <label for="apellidos">Apellido/s</label>
-            <input
-              type="text"
-              id="apellidos"
-              placeholder="Introduce apellidos"
-            />
-            <small>Mensaje de error</small>
-          </div>
-
-          <div class="form-control">
-            <label for="telefono">Número de teléfono</label>
-            <input
-              type="text"
-              id="telefono"
-              placeholder="Introduce tu número de teléfono"
-            />
-            <small>Mensaje de error</small>
-          </div>
-          <div class="form-control">
-            <label for="fecha">Fecha de nacimiento</label>
-            <input
-              type="date"
-              id="start"
-              name="trip-start"
-              value="2018-07-22"
-              min="1950-01-01"
-              max="2050-12-31"
-            />
-          </div>
-          <div class="form-control">
-            <label for="imagen">Imagen de Perfil</label>
-            <input type="file" id="imagen" placeholder="Introduzca password" />
-            <small>Mensaje de error</small>
-          </div>
-          <div class="form-control">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Introduzca password"
-            />
-            <small>Mensaje de error</small>
-          </div>
-          <div class="form-control">
-            <label for="password2">Confirme Password</label>
-            <input
-              type="password"
-              id="password2"
-              placeholder="Repita la password"
-            />
-            <small>Mensaje de error</small>
-          </div>
-          <button type="submit">Enviar</button>
-        </form>
-        <div class="derecho">
-          <div class="titulo">Bienvenido</div>
-          <hr />
-          <div class="pie-form">
-            <a href="#">¿Perdiste tu contraseña?</a>
-            <hr />
-            <a href="#">« Volver</a>
-          </div>
+<div class="contenedor">
+  <div class="contenedorcentrado">
+    <form id="form" class="registroform">
+      <div class="registro">
+        <h2 class="titulo">Regístrate en nuestra web</h2>
+        <!-- * nick * -->
+        <div class="alias">
+          <label for="alias">Alias de usuario</label>
+          <input type="text" id="alias" placeholder="Introduce tu alias" />
         </div>
+        <!-- * email * -->
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Introduce tu email" />
+        </div>
+        <div class="emailConf">
+          <label for="confirmarEmail">Confirmar Email</label>
+          <input type="text" id="confirmarEmail" placeholder="Repite tu email" />
+        </div>
+        <!-- * password * -->
+        <div class="pass">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Introduzca password" />
+        </div>
+        <div class="passConf">           
+          <label for="confirmarPassword">Confirmar Password</label>
+          <input type="password" id="confirmarPassword" placeholder="Repite tu password" />
+        </div>
+        <!-- * nombre y apellidos * -->        
+        <div class="nombre">
+          <label for="username">Nombre de Usuario/a</label>
+          <input type="text" id="username" placeholder="Introduce nombre" />
+        </div>
+        <div class="apellidos">
+          <label for="apellidos">Apellido/s</label>
+          <input type="text" id="apellidos" placeholder="Introduce apellidos" />
+        </div>
+        <!-- * telefono * -->  
+        <div class="telefono">
+          <label for="telefono">Número de teléfono</label>
+          <input type="text" id="telefono" placeholder="Introduce tu número de teléfono" />
+        </div>
+        <!-- * fecha de nacimiento * -->  
+        <div class="fecha">
+          <label for="fecha">Fecha de nacimiento</label>
+          <input type="date" id="start" name="trip-start" value="2018-07-22" min="1950-01-01" max="2050-12-31" />
+        </div>
+        <!-- * avatar * -->  
+        <div class="avatar">
+          <label for="imagen">Imagen de Perfil</label>
+          <input type="file" id="imagen" placeholder="Introduzca password" />
+        </div>
+        <button>Registrar</button>
       </div>
-    </div>
-  </div>
-</body>
+    </form>
+</div>
