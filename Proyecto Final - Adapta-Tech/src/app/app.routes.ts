@@ -18,6 +18,7 @@ import { MedicacionComponent } from './Herramientas/Medicacion/medicacion.compon
 import { CalculadoraComponent } from './Herramientas/Calculadora/calculadora.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { TestimonioComponent } from './comunidad/testimonio/testimonio.component';
+import { DescargasComponent } from './descargas/descargas.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -40,5 +41,6 @@ export const routes: Routes = [
     { path: 'contacto', component: ContactoComponent },
     { path: 'calcu', component: CalculadoraComponent },
     { path: 'medic', component: MedicacionComponent },
+    { path: 'descargas', component: DescargasComponent},
     { path: '**', component: NotfoundComponent }
   ];
