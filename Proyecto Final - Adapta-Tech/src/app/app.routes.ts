@@ -19,6 +19,7 @@ import { CalculadoraComponent } from './Herramientas/Calculadora/calculadora.com
 import { EquipoComponent } from './equipo/equipo.component';
 import { TestimonioComponent } from './comunidad/testimonio/testimonio.component';
 import { DescargasComponent } from './descargas/descargas.component';
+import { ListaTareasComponent } from './Herramientas/lista-tareas/lista-tareas.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -41,6 +42,7 @@ export const routes: Routes = [
     { path: 'contacto', component: ContactoComponent },
     { path: 'calcu', component: CalculadoraComponent },
     { path: 'medic', component: MedicacionComponent },
+    { path: 'lista', component: ListaTareasComponent },
     { path: 'descargas', component: DescargasComponent},
     { path: '**', component: NotfoundComponent }
   ];

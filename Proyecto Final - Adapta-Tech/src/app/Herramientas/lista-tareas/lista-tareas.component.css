@@ -1,0 +1,79 @@
+.contenedor {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    min-width: 380px;
+    max-width: 95%;
+    width: 95%;
+    background-color: #5b87d3;  
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);  
+    padding: 30px;
+}
+
+.contenedorcentrado {
+    width: 100%;
+    max-width: 95%;
+    min-width: 320px;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(64, 131, 247, 0.5);
+    box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.15);
+    border: 4px double black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5px black;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+
+}
+
+input[type=checkbox] {
+    box-shadow: none;
+    outline: none;
+    filter: hue-rotate(90deg);
+    width: 30px;
+}
+
+button {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-image: linear-gradient(90deg, rgba(32, 103, 154, 1) 0%, rgba(32, 103, 154, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 300px;
+    border: 5px outset rgb(22, 132, 223);
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgb(12, 28, 211),
+      1px -1px 0 rgb(14, 47, 210),
+      1px 1px 0 rgb(7, 20, 163),
+      -1px 1px 0 rgb(115, 18, 235);
+  }
+  
+  button:hover {
+    border: 5px outset rgb(13, 81, 137);
+    border-right-color: rgb(54, 190, 240);
+    border-top-color: rgb(51, 137, 208);
+    border-left-color: rgb(33, 83, 185);
+    box-shadow: 0 1px 10px 2px black;
+  }
+
+  ul {
+    color: white;
+  }

@@ -1,0 +1,26 @@
+<h2>Lista de tareas</h2>
+<div class="contenedor">
+    <div class="contenedorcentrado">
+
+        <ul>
+            <li *ngFor="let tarea of tareas">
+                <span [class.realizada]="tarea.realizada">{{ tarea.descripcion }}</span>
+                <span>{{ tarea.fecha | date:'dd/MM/yyyy' }}</span>
+                <button (click)="eliminarTarea(tarea)">Eliminar</button>
+            </li>
+        </ul>
+
+        <form (ngSubmit)="agregarTarea()" class="formulario">
+            <label>Descripción:</label>
+            <input [(ngModel)]="nuevaTarea.descripcion" name="descripcion" required>
+
+            <label>Realizada:</label>
+            <input type="checkbox" [(ngModel)]="nuevaTarea.realizada" name="realizada">
+
+            <label>Fecha:</label>
+            <input type="date" [(ngModel)]="nuevaTarea.fecha" name="fecha" required>
+
+            <button>Agregar tarea</button>
+        </form>
+    </div>
+</div>

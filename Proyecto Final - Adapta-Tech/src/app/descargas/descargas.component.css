@@ -1,47 +1,71 @@
+* {
+    text-decoration: none;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;}
-
-header {
-   
-    color: #000000;
-    text-align: center;
-    padding: 10px;
-}
-
-nav {
-    margin: 20px;
-    text-align: center;
-}
-
-/* Estilo para la primera lista de enlaces arriba */
-.nav-arriba {
-    list-style-type: none;
-    padding: 10px;
     display: flex;
     justify-content: center;
 }
 
-/* Estilo para la segunda lista de enlaces abajo */
-.nav-abajo {
-    list-style-type: none;
-    padding: 10px;
+.contenedor {
     display: flex;
     justify-content: center;
-}
+    align-items: center;
+    color: white;
+    width: 1300px;
+    background-color: #5b87d3;  
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);  
+    padding: 30px;
+  }
+  
+  .contenedorcentrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+    min-width: 1000px;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(64, 131, 247, 0.5);
+    box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.15);
+    border: 4px double black;
+    border-radius: 20px;
+  }
 
-li {
-    margin-bottom: 10px;
-}
+  .filas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .filas .primeraFila,
+  .filas .segundaFila {
+    justify-self: center;
+    gap: 2rem;
+  }
 
 .download-link {
-    text-decoration: none;
+    /* text-decoration: none;*/
     background-color: #007bff;
     color: #fff;
     padding: 8px 12px;
-    border-radius: 5px;
-    margin: 0 5px;
+    margin: 0 10px;
+    font-size: 15px;
+    margin-top: 1rem;
+    padding: .5rem;
+    width: 300px;
+    border: 2px outset rgb(28, 84, 133);
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgb(12, 28, 211),
+      1px -1px 0 rgb(14, 47, 210),
+      1px 1px 0 rgb(7, 20, 163),
+      -1px 1px 0 rgb(115, 18, 235);
 }
 
 .download-link:hover {
