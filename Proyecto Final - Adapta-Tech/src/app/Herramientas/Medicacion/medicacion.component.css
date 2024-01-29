@@ -1,33 +1,36 @@
 body {
   display: flex;
   flex-direction: row; /* Cambiado de columna a fila para que estén uno al lado del otro */
-  /* min-height: 100vh;  */
+  min-height: 100vh; 
   margin: 0;
+  align-items: flex-start;
  
 }
-/* footer {
-  margin-top: auto; 
-} */
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 8px;
   position: relative;
-  color: rgb(29, 1, 1);
-  /* justify-content: flex-start; */
+  color: white;
+  justify-content: flex-start;
   padding: 10px;
   align-self: flex-end; 
   position: static;
+  background-color: #5b87d3;
+  border-radius: 6px;
+  border: 2px double black;
 }
 
 .container .label {
   font-size: 15px;
   padding-left: 10px;
-  position:initial;/*con inherit va bien */
+  position:initial;/*con inherit TAMBIEN va bien */
   top: 13px;
   transition: 0.3s;
   pointer-events: none;
   align-self: flex-end; 
+  
 }
 
 .input {
@@ -37,16 +40,17 @@ body {
   outline: none;
   padding: 0px 7px;
   border-radius: 6px;
-  color: #fff;
+  color: yellow;
   font-size: 15px;
-  background-color: transparent;
-  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  background-color: rgba(15, 102, 253, 0.5);
+  border: 4px double black;
+  box-shadow: 3px 3px 10px #6f97db,
   -1px -1px 6px rgba(255, 255, 255, 0.4);
 }
 
 .input:focus {
   border: 2px solid transparent;
-  color: #0e0101;
+  color: white;
   box-shadow: 3px 3px 10px rgba(0,0,0,1),
   -1px -1px 6px rgba(255, 255, 255, 0.4),
   inset 3px 3px 10px rgba(0,0,0,1),
@@ -63,16 +67,18 @@ body {
 .container .input:valid,
 .container .input:focus {
   box-shadow: 3px 3px 10px rgba(0,0,0,1),
-  -1px -1px 6px rgba(255, 255, 255, 0.4),
+  -1px -1px 6px rgba(228, 5, 5, 0.4),
   inset 3px 3px 10px rgba(0,0,0,1),
   inset -1px -1px 6px rgba(255, 255, 255, 0.4);
 }
 .area-total-abas {
-  margin-top: 10px;
+  margin-top: 100px; /*altura del contenedor a los botones*/
   width: 50%;
   background-color:transparent;
-  margin-inline: 35%;
+  margin-inline: 33%;
   z-index: 1000;
+  /* margin-block-end: -150px; con este no se sube en 150 de zoom
+  padding-block-end: -300px; */
 }
 .container {
   max-width: 400px;
@@ -92,7 +98,7 @@ body {
   position:static;
   font-size:0;
   text-align:left;
-  color:#666
+  color:#0a0a0a
 }
 .lista-abas > input {
   position:static;
@@ -109,7 +115,9 @@ body {
   padding-left:0;
   font-size:13px;
   line-height:45px;
-  cursor:pointer
+  cursor:pointer;
+  background-color: rgba(15, 102, 253, 0.5);
+  border: 4px double black
 }
 .lista-abas > label span {
   display:block;
@@ -141,15 +149,17 @@ body {
 }
 .lista-abas > ul > li {
   position: absolute;
+  background-color: rgba(15, 102, 253, 0.5);
+  border: 4px double black;
   top: 0;
   left: 0;
-  width: 627px;
+  width: 684px;
   overflow-y:scroll;
   padding: 20px 25px 25px;
   background: rgba(255, 255, 255, .9);
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  opacity: 1;
+  /* opacity: 1;
   -o-transform-origin: 0% 0%;
   -ms-transform-origin: 0% 0%;
   -moz-transform-origin: 0% 0%;
@@ -159,7 +169,7 @@ body {
   -ms-transition: opacity .8s, -ms-transform .8s, -ms-transition .8s;
   -moz-transition: opacity .8s, -moz-transform .8s, -moz-transition .8s;
   -webkit-transition: opacity .8s, -webkit-transform .8s, -webkit-transition .8s;
-  transition: opacity .8s, transform .8s; /* Agregando la propiedad estándar "transition" */
+  transition: opacity .8s, transform .8s;  */
 }
 
 .lista-abas > .aba-1:checked ~ ul > .aba-1,
@@ -169,15 +179,15 @@ body {
 .lista-abas > .aba-5:checked ~ ul > .aba-5,
 .lista-abas > .aba-6:checked ~ ul > .aba-6,
 .lista-abas > .aba-7:checked ~ ul > .aba-7 {
-  position: relative;
+  position: static;
   z-index: 1;
-  opacity: 1;
-  transform-origin: 0% 0%;
+  /* opacity: 1; */
+  /* transform-origin: 0% 0%;  CAMBIA EL MOVIMIENTO*/ 
   -o-transition: opacity .8s, -o-transform .8s, -o-transition .8s;
   -ms-transition: opacity .8s, -ms-transform .8s, -ms-transition .8s;
   -moz-transition: opacity .8s, -moz-transform .8s, -moz-transition .8s;
   -webkit-transition: opacity .8s, -webkit-transform .8s, -webkit-transition .8s;
-  transition: opacity .8s, transform .8s; /* Agregando la propiedad estándar "transition" */
+  transition: opacity .8s, transform .8s;
 }
 .lista-abas > .aba-1:checked ~ ul > .aba-1, 
 .lista-abas > .aba-2:checked ~ ul > .aba-2, 
@@ -186,20 +196,26 @@ body {
 .lista-abas > .aba-5:checked ~ ul > .aba-5,
 .lista-abas > .aba-6:checked ~ ul > .aba-6,
 .lista-abas > .aba-7:checked ~ ul > .aba-7 {
- position:relative;
+ position:static;
  z-index:1;
  opacity:1
 }
 .conteudo {
   width:600px;
-  position:relative;
+  position:static;
   line-height:20px
 }
-.pagina-url {
+/* .pagina-url {
   float:right;
   margin-top:15px
+} */
+.amimacao-flip {
+  position: static;
+  z-index: 10000; /* Ajusta este valor según sea necesario para que esté por debajo de otros elementos */
 }
+
 .amimacao-flip > ul {
+ 
   perspective: 2000px;
   -o-perspective: 2000px;
   -ms-perspective: 2000px;
@@ -210,7 +226,7 @@ body {
   -ms-perspective-origin: 50% 50%;
   -moz-perspective-origin: 50% 50%;
   -webkit-perspective-origin: 50% 50%;
-  transform-style: preserve-3d; /* Propiedad estándar */
+  transform-style: preserve-3d; 
   -o-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -223,7 +239,7 @@ body {
   -ms-transform: rotateX(-90deg);
   -moz-transform: rotateX(-90deg);
   -webkit-transform: rotateX(-90deg);
-  transform-style: preserve-3d; /* Propiedad estándar */
+  transform-style: preserve-3d; 
   -o-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -261,3 +277,40 @@ body {
       transform: translatey(calc(-200px * 6))
   }
 } 
+.botonera {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea los botones a la derecha */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  
+}
+.btn-31 {
+  margin-bottom: 10px;
+  margin-right: 100px;
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  /* border: 0; */
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  background-color: rgba(7, 31, 73, 0.5);
+  border: 4px double black;
+  color: #0e0d0d;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.btn-31:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+.btn-31:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
