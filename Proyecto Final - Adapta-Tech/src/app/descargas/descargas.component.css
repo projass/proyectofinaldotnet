@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;}
+
+header {
+   
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilo para la primera lista de enlaces arriba */
+.nav-arriba {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para la segunda lista de enlaces abajo */
+.nav-abajo {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.download-link {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.download-link:hover {
+    background-color: #0056b3;
+}
+
+
