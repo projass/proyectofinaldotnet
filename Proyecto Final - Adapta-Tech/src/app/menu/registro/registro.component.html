@@ -1,56 +1,64 @@
 <div class="contenedor">
   <div class="contenedorcentrado">
-    <form id="form" class="registroform">
+    <form id="form" class="registroform" #formulario="ngForm" (submit)="register()">
       <div class="registro">
         <h2 class="titulo">Regístrate en nuestra web</h2>
         <!-- * nick * -->
         <div class="alias">
           <label for="alias">Alias de usuario</label>
-          <input type="text" id="alias" placeholder="Introduce tu alias" />
+          <input [(ngModel)] = "registro.perfilUsuario.alias" type="text" id="alias" name="aliasUsuario" placeholder="Introduce tu alias" />
         </div>
         <!-- * email * -->
         <div class="email">
           <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Introduce tu email" />
+          <input [(ngModel)] = "registro.email" type="text" id="email" name="emailUsuario" placeholder="Introduce tu email" />
         </div>
+        <!-- *
         <div class="emailConf">
           <label for="confirmarEmail">Confirmar Email</label>
-          <input type="text" id="confirmarEmail" placeholder="Repite tu email" />
+          <input [(ngModel)] = "registro.email" type="text" id="confirmarEmail" placeholder="Repite tu email" />
         </div>
+        * -->
         <!-- * password * -->
-        <div class="pass">
+        <div class="password">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Introduzca password" />
+          <input [(ngModel)] = "registro.password" type="password" id="password" name="contraseñaUsuario" placeholder="Introduzca password" />
         </div>
+        <!-- *
         <div class="passConf">           
           <label for="confirmarPassword">Confirmar Password</label>
-          <input type="password" id="confirmarPassword" placeholder="Repite tu password" />
+          <input [(ngModel)] = "registro.password" type="password" id="confirmarPassword" placeholder="Repite tu password" />
         </div>
+        * -->
         <!-- * nombre y apellidos * -->        
         <div class="nombre">
           <label for="username">Nombre de Usuario/a</label>
-          <input type="text" id="username" placeholder="Introduce nombre" />
+          <input [(ngModel)] = "registro.perfilUsuario.nombre" type="text" id="username" name="nombreUsuario" placeholder="Introduce nombre" />
         </div>
         <div class="apellidos">
           <label for="apellidos">Apellido/s</label>
-          <input type="text" id="apellidos" placeholder="Introduce apellidos" />
+          <input [(ngModel)] = "registro.perfilUsuario.apellidos" type="text" id="apellidos" name="apellidosUsuario" placeholder="Introduce apellidos" />
         </div>
         <!-- * telefono * -->  
         <div class="telefono">
           <label for="telefono">Número de teléfono</label>
-          <input type="text" id="telefono" placeholder="Introduce tu número de teléfono" />
+          <input [(ngModel)] = "registro.perfilUsuario.telefono" type="text" id="telefono" name="telefonoUsuario" placeholder="Introduce tu número de teléfono" />
         </div>
-        <!-- * fecha de nacimiento * -->  
+        <!-- * fecha de nacimiento * --> 
+       
         <div class="fecha">
           <label for="fecha">Fecha de nacimiento</label>
-          <input type="date" id="start" name="trip-start" value="2018-07-22" min="1950-01-01" max="2050-12-31" />
+          <input [(ngModel)] = "registro.perfilUsuario.fechaNacimiento" type="date" id="start" name="nacimientoUsuario" value="2018-07-22" min="1950-01-01" max="2050-12-31" />
         </div>
-        <!-- * avatar * -->  
+        
+        <!-- * avatar * --> 
+     
         <div class="avatar">
           <label for="imagen">Imagen de Perfil</label>
-          <input type="file" id="imagen" placeholder="Introduzca password" />
+          <input [(ngModel)] = "registro.perfilUsuario.avatar" type="file" id="imagen" placeholder="Introduzca password" />
         </div>
-        <button>Registrar</button>
+     
+        <button type="submit">Registrar</button>
       </div>
     </form>
 </div>

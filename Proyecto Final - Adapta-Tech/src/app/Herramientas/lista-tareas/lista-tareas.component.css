@@ -45,7 +45,7 @@ input {
 input[type=checkbox] {
     box-shadow: none;
     outline: none;
-    filter: hue-rotate(90deg);
+    /* filter: hue-rotate(90deg); */
     width: 30px;
 }
 
