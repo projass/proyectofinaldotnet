@@ -25,7 +25,7 @@ export class LoginComponent {
     this.loginService.login(this.usuario).subscribe({
       next: (data) => {
         localStorage.setItem("usuario", JSON.stringify(data));
-        this.router.navigateByUrl("medic");
+        this.router.navigateByUrl("logueado");
       },
       error: (err) => {
         alert("Credenciales erróneas");
