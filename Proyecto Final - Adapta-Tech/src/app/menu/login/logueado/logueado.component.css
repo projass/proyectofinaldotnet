@@ -1,0 +1,39 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -400px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-image: linear-gradient(90deg, rgba(32, 103, 154, 1) 0%, rgba(32, 103, 154, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    border: 5px outset rgb(22, 132, 223);
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgb(255, 255, 255),
+      1px -1px 0 rgb(182, 184, 194),
+      1px 1px 0 rgb(200, 201, 215),
+      -1px 1px 0 rgb(243, 241, 246);
+}
+
+a:hover {
+    border: 5px outset rgb(13, 81, 137);
+    border-right-color: rgb(54, 190, 240);
+    border-top-color: rgb(51, 137, 208);
+    border-left-color: rgb(33, 83, 185);
+    box-shadow: 0 1px 10px 2px black;
+}
+
+fieldset {
+    background-color: rgba(95, 158, 160, 0.511);
+    padding: 20px;
+    border-radius: 20px;
+}

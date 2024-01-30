@@ -34,7 +34,7 @@ export class RegistroComponent {
     this.registerService.register(this.registro).subscribe({
       next: (data) => {
         localStorage.setItem("registro", JSON.stringify(data));
-        this.router.navigateByUrl("medic");
+        this.router.navigateByUrl("login");
       },
       error: (err) => {
         alert("No se ha podido realizar el registro");
