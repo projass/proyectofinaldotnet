@@ -3,7 +3,7 @@
       <div class="contenedorcentrado">
         <div class="login">
           <form class="loginform" #formulario="ngForm" (submit)="login()">
-            <label for="usuario">Usuario</label>
+            <label for="usuario">Email</label>
             <input class="usuario" [(ngModel)]="usuario.email" type="text" name="usuario" id="usuario" placeholder="Usuario" required /> 
             <label for="password">Contraseña</label>
             <input class="password" type="password" [(ngModel)]="usuario.password" placeholder="Contraseña" name="password" id="password" required />
@@ -17,7 +17,7 @@
           <hr />
           <div class="pie-form">
             <a href="#">¿Perdiste tu contraseña?</a>
-            <a href="#">¿No tienes Cuenta? Registrate</a>
+            <a routerLink ="/registro">¿No tienes Cuenta? Registrate</a>
             <hr />
             <a href="#">« Volver</a>
           </div>
