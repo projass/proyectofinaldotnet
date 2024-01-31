@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TextoService } from '../../services/texto.service';
 
 @Component({
   selector: 'app-inicio',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
-export class InicioComponent {
- 
+export class InicioComponent implements OnInit{
+  constructor(private textoService: TextoService) { }
+
+  ngOnInit(): void {
+  }
+
+  obtenerTamanoTexto(): number {
+    return this.textoService.getTamanoTexto();
+  }
 }

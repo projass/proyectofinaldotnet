@@ -12,12 +12,10 @@ overflow: hidden;
 outline: 3px solid rgb(5, 114, 177);
 }
 mat-nav-list {
-    width: 170px;
+    width: 230px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     border-radius: 0 20px 20px 0;
 }
-
-
 button {
     border-radius: 50%;
     width: 50px;
@@ -29,6 +27,19 @@ button {
     height: 100%; 
     border-radius: 50%;
     object-fit: cover;
-    background-color: rgb(6, 127, 197);
+    background: linear-gradient(30deg, rgb(86, 146, 196) 20%, rgb(25, 0, 255) 80%);
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+    animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+    align-items: center;
+    border: 0;
   }
- 
+  .button:is(:hover, :focus) {
+    transform: scale(1.2);
+  }
+  @keyframes pulse {
+    100% {
+      box-shadow: 0 0 0 45px rgba(193,244,246,0.4);
+    }
+  }
+  
