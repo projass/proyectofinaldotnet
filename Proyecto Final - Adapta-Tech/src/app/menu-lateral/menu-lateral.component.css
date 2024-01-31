@@ -1,16 +1,18 @@
 mat-sidenav-container{
     background-color: transparent;
     position: fixed;
-    height: 300px;
+    height: 310px;
 }
 
 mat-sidenav {
-background-color: white;
+background: rgba(4, 7, 190, 0.1);
+backdrop-filter: blur(24px);
 border-radius: 0 20px 20px 0;
+overflow: hidden;
+outline: 3px solid rgb(5, 114, 177);
 }
-
 mat-nav-list {
-    width: 200px;
+    width: 170px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     border-radius: 0 20px 20px 0;
 }
@@ -27,4 +29,6 @@ button {
     height: 100%; 
     border-radius: 50%;
     object-fit: cover;
+    background-color: rgb(6, 127, 197);
   }
+ 
