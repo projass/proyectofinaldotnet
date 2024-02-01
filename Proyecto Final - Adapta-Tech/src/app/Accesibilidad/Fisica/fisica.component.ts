@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TextoService } from '../../../services/texto.service';
 
 @Component({
   selector: 'app-fisica',
@@ -8,6 +9,13 @@ import { RouterModule } from '@angular/router';
   templateUrl: './fisica.component.html',
   styleUrl: './fisica.component.css'
 })
-export class FisicaComponent {
+export class FisicaComponent implements OnInit {
+  constructor(private textoService: TextoService) { }
 
+  ngOnInit(): void {
+  }
+
+  obtenerTamanoTexto(): number {
+    return this.textoService.getTamanoTexto();
+  }
 }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TextoService } from '../../../services/texto.service';
 
 @Component({
   selector: 'app-ocio',
@@ -8,6 +9,13 @@ import { RouterModule } from '@angular/router';
   templateUrl: './ocio.component.html',
   styleUrl: './ocio.component.css'
 })
-export class OcioComponent {
+export class OcioComponent implements OnInit {
+  constructor(private textoService: TextoService) { }
 
+  ngOnInit(): void {
+  }
+
+  obtenerTamanoTexto(): number {
+    return this.textoService.getTamanoTexto();
+  }
 }
