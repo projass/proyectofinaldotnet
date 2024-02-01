@@ -30,6 +30,7 @@ body {
   padding: 0px 7px;
   border-radius: 6px;
   font-size: 15px;
+  color: white;
   background-color: rgba(15, 102, 253, 0.5);
   border: 4px double black;
   box-shadow: 3px 3px 10px #6f97db,
