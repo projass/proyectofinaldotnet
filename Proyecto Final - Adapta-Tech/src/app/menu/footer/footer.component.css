@@ -39,7 +39,7 @@
  
  .info {
    font-size: 1.2rem;
-   color: rgba(0, 251, 255, 0.7);
+   color: #ffffff;
    margin: 0 10px;
    display: inline-block;
    transition: 0.5s;
@@ -48,7 +48,7 @@
  }
  
  .info:hover {
-   color: white;
+   color: rgba(0, 251, 255, 0.7);
  }
  
 footer p {

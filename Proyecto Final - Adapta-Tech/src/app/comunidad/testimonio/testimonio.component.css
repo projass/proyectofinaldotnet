@@ -63,7 +63,10 @@ main h1 {
 
 .fotoPerfil1,
 .fotoPerfil2,
-.fotoPerfil3 {
+.fotoPerfil3,
+.fotoPerfil4,
+.fotoPerfil5,
+.fotoPerfil6 {
     width: 200px;
     height: 200px;
     background-position: center -10px;
@@ -76,20 +79,31 @@ main h1 {
 }
 
 .fotoPerfil1 {
-    background-image: url(../../../assets/syc.png);
+    background-image: url(../../../assets/Fernan.webp);
     background-size: 280px;
+    background-position: center -25px;
 }
 
 .fotoPerfil2 {
     background-image: url(../../../assets/migue.webp);
-    background-size: 400px;
+    background-size: 240px;
     background-position: center -10px;
 }
 
 .fotoPerfil3 {
     background-image: url(../../../assets/rafa.jpg);
 }
-
+.fotoPerfil4 {
+    background-image: url(../../../assets/Eloy.webp);
+    background-size: 240px;
+    background-position: center -10px;
+}
+.fotoPerfil5 {
+    background-image: url(../../../assets/Patxhi.jpg);
+}
+.fotoPerfil6 {
+    background-image: url(../../../assets/J-L.jpg);
+}
 .testimonio h2 {
     margin-top: 30px;
 }
@@ -127,3 +141,33 @@ main h1 {
 .fa-square-twitter {
     color: rgb(11, 158, 237);
 }
+.botonera {
+  display: flex;
+  justify-content: center;
+  gap: 10px;  
+    
+  }
+  button {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-image: linear-gradient(90deg, rgba(32, 103, 154, 1) 0%, rgba(32, 103, 154, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    border: 5px outset rgb(22, 132, 223);
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgb(12, 28, 211),
+      1px -1px 0 rgb(14, 47, 210),
+      1px 1px 0 rgb(7, 20, 163),
+      -1px 1px 0 rgb(115, 18, 235);
+  }
+  
+  button:hover {
+    border: 5px outset rgb(13, 81, 137);
+    border-right-color: rgb(54, 190, 240);
+    border-top-color: rgb(51, 137, 208);
+    border-left-color: rgb(33, 83, 185);
+    box-shadow: 0 1px 10px 2px black;
+  }
