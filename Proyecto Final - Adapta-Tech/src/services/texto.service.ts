@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TextoService {
-  private tamanoTexto: number = 16;
+  private tamanoTexto: number = 18;
 
   getTamanoTexto(): number {
     return this.tamanoTexto;
