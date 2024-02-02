@@ -110,7 +110,7 @@ export class ForoComponent {
         this.verMensajes();
       },
       error: (err) =>
-        alert("No se pudo añadir el mensaje nuevo nuevo al foro."),
+        alert("No se pudo añadir el mensaje nuevo al foro."),
       complete: () => console.log("ok"),
     });
   }

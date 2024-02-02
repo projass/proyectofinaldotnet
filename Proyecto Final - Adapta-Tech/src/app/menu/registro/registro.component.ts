@@ -3,6 +3,9 @@ import { FormsModule } from "@angular/forms";
 import { Router, RouterModule } from "@angular/router";
 import { IRegister } from "../../../interfaces/register.interface";
 import { RegisterService } from "../../../services/register.service";
+import { LoginService } from "../../../services/login.service";
+import { IUser } from "../../../interfaces/user.interface";
+
 
 @Component({
   selector: "app-registro",
@@ -25,7 +28,7 @@ export class RegistroComponent {
     }
   };
 
-  constructor(private registerService: RegisterService, private router: Router) {}
+  constructor(private registerService: RegisterService, private loginService: LoginService ,private router: Router) {}
 
   ngOnInit() {}
 
@@ -37,12 +40,43 @@ export class RegistroComponent {
   register() {
     this.registerService.register(this.registro).subscribe({
       next: (data) => {
-        this.router.navigateByUrl("login");
+        // Aquí asumimos que el servicio de registro devuelve el usuario registrado
+        const usuario: IUser = {
+          email: this.registro.email,
+          password: this.registro.password
+        };
+  
+        // Iniciamos sesión con el usuario registrado
+        this.loginService.login(usuario).subscribe({
+          next: (data) => {
+            // Aquí asumimos que el servicio de inicio de sesión devuelve el token de autenticación
+            // y lo guardamos en el almacenamiento local.
+            localStorage.setItem('usuario', JSON.stringify(data));
+  
+            // Redirigimos al usuario a la página principal después del registro y inicio de sesión.
+            this.router.navigateByUrl("login");
+          },
+          error: (err) => {
+            alert("No se ha podido iniciar sesión");
+          }
+        });
       },
       error: (err) => {
         alert("No se ha podido realizar el registro");
-      },
-      complete: () => {},
+      }
     });
   }
+  
+
+  // register() {
+  //   this.registerService.register(this.registro).subscribe({
+  //     next: (data) => {
+  //       this.router.navigateByUrl("login");
+  //     },
+  //     error: (err) => {
+  //       alert("No se ha podido realizar el registro");
+  //     },
+  //     complete: () => {},
+  //   });
+  // }
 }

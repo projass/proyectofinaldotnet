@@ -1,18 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { LoginService } from '../../../../services/login.service';
-import { Router } from '@angular/router';
-import { IPerfil } from '../../../../interfaces/perfil.interface';
-import { ITokenInfo } from '../../../../interfaces/user.interface';
+import { Component, OnInit } from "@angular/core";
+import { IPerfil } from "../../../../interfaces/perfil.interface";
+import { LoginService } from "../../../../services/login.service";
+import { Router } from "@angular/router";
+import { ITokenInfo } from "../../../../interfaces/user.interface";
 
 @Component({
-  selector: 'app-logueado',
+  selector: "app-logueado",
   standalone: true,
   imports: [],
-  templateUrl: './logueado.component.html',
-  styleUrl: './logueado.component.css'
+  templateUrl: "./logueado.component.html",
+  styleUrl: "./logueado.component.css",
 })
-export class LogueadoComponent implements OnInit{
-  email: string = '';
+export class LogueadoComponent {
+  [x: string]: any;
 
   usuario = JSON.parse(localStorage.getItem("usuario")!) as ITokenInfo;
 
