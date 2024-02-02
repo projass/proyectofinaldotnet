@@ -1,10 +1,9 @@
 h6 {
   margin-top: 20px;
+  margin-left: 30px;
   font-weight: bold;
-  font-size: 600;
-  background-color: rgb(164, 164, 164);
+  font-size: 700;
   padding: 10px;
-  border-radius: 20px;
 }
 
 mat-sidenav-container{
@@ -14,14 +13,14 @@ mat-sidenav-container{
 }
 
 mat-sidenav {
-background: rgba(192, 192, 192, 0.6);
+background: rgba(192, 192, 192, 0.7);
 backdrop-filter: blur(24px);
 border-radius: 0 20px 20px 0;
 overflow: hidden;
 outline: 3px solid rgb(5, 114, 177);
 }
 mat-nav-list {
-    width: 230px;
+    width: 200px;
 }
 button {
     border-radius: 50%;

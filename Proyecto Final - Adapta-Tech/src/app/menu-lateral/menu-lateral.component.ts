@@ -22,4 +22,7 @@ export class MenuLateralComponent {
   disminuirTexto(): void {
     this.textoService.disminuirTexto();
   }
+  restablecer() {
+    window.location.reload();
+  }
 }
