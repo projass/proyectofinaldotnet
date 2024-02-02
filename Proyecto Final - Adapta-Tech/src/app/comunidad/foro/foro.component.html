@@ -1,1 +1,44 @@
-<p>foro works!</p>
+<nav>
+  <ul>
+    <!-- Agrega más temas según sean añadidos -->
+    <li *ngFor="let tema of temasForo">
+      <button (click)="cambiaTema(tema.idTema!)">
+        {{ tema.titulo }}
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<!-- Contenedor de Tema -->
+<app-table-tema [mensajes]="mensajesForo"></app-table-tema>
+
+<!-- Formulario para Nuevo Tema HECHO-->
+<form>
+  <label for="nuevotema">Nuevo Tema:</label>
+  <input
+    type="text"
+    id="nuevotema"
+    name="nuevotema"
+    rows="4"
+    cols="50"
+    [(ngModel)]="nombreNuevoTema"
+  />
+  <button type="button" (click)="addTema()">Añade tema</button>
+</form>
+
+<!--  Formulario para Nuevo Mensaje -->
+
+<form>
+  <label for="nuevomensaje">Nuevo mensaje:</label>
+  <input
+    type="text"
+    id="nuevomensaje"
+    name="nuevomensaje"
+    [(ngModel)]="textoNuevoMensaje"
+  />
+  <button type="button" (click)="addMensaje()">Añade mensaje</button>
+</form>
+
+<!---->
+
+<form></form>

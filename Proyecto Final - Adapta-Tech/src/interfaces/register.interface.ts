@@ -1,12 +1,12 @@
 export interface IRegister {
-    email: string;
-    password: string;
-    perfilUsuario: {
-      nombre: string;
-      apellidos: string;
-      telefono: string;
-      fechaNacimiento: Date | null;
-      avatar: Uint8Array | null;
-      alias: string;
-    }
-  }
+  email: string;
+  password: string;
+  avatar: File | undefined;
+  perfilUsuario: {
+    nombre: string;
+    apellidos: string;
+    telefono: string;
+    fechaNacimiento: Date | null;
+    alias: string;
+  };
+}

@@ -55,7 +55,7 @@
      
         <div class="avatar">
           <label for="imagen">Imagen de Perfil</label>
-          <input [(ngModel)] = "registro.perfilUsuario.avatar" type="file" id="imagen" placeholder="Introduzca password" />
+          <input (change)="onFileChange($event)" type="file" id="imagen" placeholder="Introduzca avatar" />
         </div>
      
         <button type="submit">Registrar</button>

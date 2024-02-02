@@ -21,6 +21,7 @@ import { TestimonioComponent } from './comunidad/testimonio/testimonio.component
 import { DescargasComponent } from './descargas/descargas.component';
 import { ListaTareasComponent } from './Herramientas/lista-tareas/lista-tareas.component';
 import { LogueadoComponent } from './menu/login/logueado/logueado.component';
+import { ForoComponent } from './comunidad/foro/foro.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -46,5 +47,6 @@ export const routes: Routes = [
     { path: 'lista', component: ListaTareasComponent },
     { path: 'descargas', component: DescargasComponent},
     { path: 'logueado', component: LogueadoComponent},
+    { path: 'foro', component: ForoComponent},
     { path: '**', component: NotfoundComponent }
   ];

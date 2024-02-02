@@ -17,6 +17,8 @@ export class LoginComponent {
     password: "",
   };
 
+  email: string = "";
+  
   constructor(private loginService: LoginService, private router: Router) {}
 
   ngOnInit() {}
