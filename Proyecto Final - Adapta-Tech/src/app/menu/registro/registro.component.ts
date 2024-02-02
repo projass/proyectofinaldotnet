@@ -15,12 +15,12 @@ export class RegistroComponent {
   registro: IRegister = {
     email: "",
     password: "",
+    avatar: undefined,
     perfilUsuario: {  // Añade la información del perfil de usuario aquí
       nombre: "",
       apellidos: "",
       telefono: "",
       fechaNacimiento: null,
-      avatar: null,
       alias: ""
     }
   };
@@ -29,11 +29,14 @@ export class RegistroComponent {
 
   ngOnInit() {}
 
-  register() {
+  onFileChange(event: any) {
+    this.registro.avatar = event.target.files[0];
+    console.log(event);
+  }
 
+  register() {
     this.registerService.register(this.registro).subscribe({
       next: (data) => {
-        localStorage.setItem("registro", JSON.stringify(data));
         this.router.navigateByUrl("login");
       },
       error: (err) => {

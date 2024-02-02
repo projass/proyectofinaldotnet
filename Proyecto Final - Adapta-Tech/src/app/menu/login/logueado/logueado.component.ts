@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../../../services/login.service';
+import { Router } from '@angular/router';
+import { IPerfil } from '../../../../interfaces/perfil.interface';
+import { ITokenInfo } from '../../../../interfaces/user.interface';
 
 @Component({
   selector: 'app-logueado',
@@ -11,16 +14,26 @@ import { LoginService } from '../../../../services/login.service';
 export class LogueadoComponent implements OnInit{
   email: string = '';
 
-  constructor(private loginService: LoginService) { }
+  usuario = JSON.parse(localStorage.getItem("usuario")!) as ITokenInfo;
 
-  ngOnInit(): void {
-    this.obtenerPerfilUsuario();
+  perfil!: IPerfil;
+
+  constructor(private loginService: LoginService, private router: Router) {}
+
+  ngOnInit() {
+    this.getProfile();
   }
 
-  obtenerPerfilUsuario(): void {
-    if (this.loginService.estaAutenticado()) {
-      const usuario = this.loginService.obtenerUsuario();
-      this.email = usuario ? usuario.email : '';
-    }
+  getProfile() {
+    this.loginService.getProfile(this.usuario.email).subscribe({
+      next: (data) => {
+        localStorage.setItem("perfil", JSON.stringify(data));
+        this.perfil = JSON.parse(localStorage.getItem("perfil")!) as IPerfil;
+      },
+      error: (err: any) => {
+        alert("No se pudo cargar el perfil");
+      },
+      complete: () => {},
+    });
   }
 }
