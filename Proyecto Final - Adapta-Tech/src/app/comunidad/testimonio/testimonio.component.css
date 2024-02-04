@@ -10,25 +10,28 @@ main {
     width: 95%;
     max-width: 95%;
     text-align: center;
-    background-image: url(../../../assets/acc3.jpg);
+    /* background-image: url(../../../assets/acc3.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     padding: 20px;
     margin: auto;
     margin-top: 40px;
 }
 main h1 {
+    font-size: 60px;
+    padding-top: 50px;
     color: white;
     position: static;
 }
 
 .capaNegra {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
     margin: auto;
-    margin-top: 30px
+    margin-top: 30px;
+    border-radius: 20px;
 }
 
 .p1 {

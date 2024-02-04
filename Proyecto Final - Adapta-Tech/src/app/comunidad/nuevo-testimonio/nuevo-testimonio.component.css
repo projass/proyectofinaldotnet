@@ -7,11 +7,7 @@ body {
     height: 100vh;
     background-color: beige;
   }
-  /* .encabezado {
-    padding: 2px;
-    background-color: #333; */
   .contenedor {
-    position: relative;
     width: 100%;
     max-width: 1000px;
     flex-direction: column-reverse;
@@ -22,15 +18,15 @@ body {
     border-radius: 10px;
     border: 2px double black;
     padding: 30px;
-    margin-top: 20px; /*Ajusta este valor según la separación que desees entre el botón y el contenedor*/
+    margin-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   #areaTexto {
     width: 100%;
-    height: 300px; /* Puedes ajustar la altura según tus preferencias */
-    resize: none; /* Evita que el usuario redimensione la caja de texto */
-    border: 2px double #0f0000; /* Borde del área de texto */
+    height: 300px;
+    resize: none;
+    border: 2px double #0f0000;
     padding: 10px;
     box-sizing: border-box;
   }
