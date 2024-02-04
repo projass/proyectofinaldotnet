@@ -1,10 +1,9 @@
 <nav>
   <ul>
-    <!-- Agrega más temas según sean añadidos -->
     <li *ngFor="let tema of temasForo">
-      <button (click)="cambiaTema(tema.idTema!)">
+      <span (click)="cambiaTema(tema.idTema!)" class="bo">
         {{ tema.titulo }}
-      </button>
+      </span>
     </li>
   </ul>
 </nav>

@@ -25,4 +25,9 @@ export class MenuLateralComponent {
   restablecer() {
     window.location.reload();
   }
+  modoContraste: boolean = false;
+
+  activarContraste() {
+    this.modoContraste = !this.modoContraste; //activarlo y desactivarlo
+  }
 }
