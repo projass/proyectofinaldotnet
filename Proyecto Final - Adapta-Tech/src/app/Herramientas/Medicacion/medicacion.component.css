@@ -71,7 +71,21 @@ body {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
-
+.input {
+  border: 2px double black;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #0ec8f7;
+  box-shadow: inset 2px 5px 10px rgba(247, 246, 246, 0.3);
+  transition: 300ms ease-in-out;
+}
+.input:focus {
+  background-color: rgb(134, 210, 240);
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
 .panel {
   background-color: #2667c9dc;
   padding: 20px;
@@ -127,10 +141,10 @@ body {
 }
 
 h3,p {
-  color: white;
+  color: rgb(211, 241, 247);
 }
 h3 {
-  font-weight: bold;
+  font-weight:bolder;
   font-size: 500;
 }
 
