@@ -104,3 +104,13 @@ button:hover {
     border-left-color: rgb(33, 83, 185);
     box-shadow: 0 1px 10px 2px gray
 }
+
+.capaNegra {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 30px;
+  }

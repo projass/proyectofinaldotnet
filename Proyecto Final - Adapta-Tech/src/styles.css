@@ -5,12 +5,12 @@
   }
 
   body {
-    /* background-image: url(../src/assets/fernando.jpg);
+    background-image: url(../src/assets/cieloazul2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; */
-    background-color: beige;
+    background-attachment: fixed;
+    /* background-color: beige; */
     font-family: Roboto, "Helvetica Neue", sans-serif; 
   }
   .contraste {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TextoService } from '../../services/texto.service';
+import { GuiaCursorService } from '../../services/guia-cursor.service';
 
 @Component({
   selector: 'app-inicio',
@@ -9,12 +10,19 @@ import { TextoService } from '../../services/texto.service';
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent implements OnInit{
-  constructor(private textoService: TextoService) { }
+  constructor(private textoService: TextoService, private guiaCursorService: GuiaCursorService) { }
 
   ngOnInit(): void {
   }
 
   obtenerTamanoTexto(): number {
     return this.textoService.getTamanoTexto();
+  }
+  mostrarGuiaCursor() {
+    this.guiaCursorService.toggleMostrarGuia();
+  }
+
+  moverGuiaCursor(event: MouseEvent) {
+    this.guiaCursorService.actualizarCoordenadas(event);
   }
 }

@@ -5,48 +5,50 @@
 	<title>Ayudas para Personas con Discapacidad</title>
 </head>
 <body>
-	<h1 [style.fontSize.px]="obtenerTamanoTexto()"> Accesibilidad Total Física </h1>
-	<p class="texto" [style.fontSize.px]="obtenerTamanoTexto()">En <strong>Adapta-Tech</strong>, nos enorgullece ofrecer una experiencia inclusiva para todos, 
-		incluyendo a aquellos con discapacidades físicas. Facilitamos la navegación mediante teclado
-		 y garantizamos la compatibilidad con tecnologías de asistencia, como lectores de pantalla 
-		 y dispositivos de control por voz. Priorizamos la accesibilidad al ofrecer tiempo ajustable para interactuar, 
-		 botones de fácil selección y un diseño claro de alto contraste. Nuestros formularios son optimizados para 
-		 dispositivos de entrada alternativos, y todo el contenido multimedia cuenta con transcripciones y descripciones. 
-		 Realizamos pruebas con usuarios reales para asegurar que nuestra plataforma sea accesible y utilizable para todos. 
-		 Estamos comprometidos con una experiencia en línea inclusiva y equitativa para cada visitante, sin importar sus habilidades físicas.</p>
-	<div class="contenedor">
-		<div class="imagenContenedor">
-			<img src="../../../assets/dificiltad_fisica/Navegación con Teclado.jpeg" alt="Navegación con Teclado">
-			<div class="botonContenedor">
-				<button>
-					<a href="https://www.fundacionconectea.org/2023/05/17/la-web-de-fundacion-conectea-es-mas-accesible/" Target="_blank">
-						Nav con Teclado
-					</a>
-				</button>
+	<div class="capaNegra">
+		<h1 [style.fontSize.px]="obtenerTamanoTexto()"> Accesibilidad Total Física </h1>
+		<p class="texto" [style.fontSize.px]="obtenerTamanoTexto()">En <strong>Adapta-Tech</strong>, nos enorgullece ofrecer una experiencia inclusiva para todos, 
+			incluyendo a aquellos con discapacidades físicas. Facilitamos la navegación mediante teclado
+			y garantizamos la compatibilidad con tecnologías de asistencia, como lectores de pantalla 
+			y dispositivos de control por voz. Priorizamos la accesibilidad al ofrecer tiempo ajustable para interactuar, 
+			botones de fácil selección y un diseño claro de alto contraste. Nuestros formularios son optimizados para 
+			dispositivos de entrada alternativos, y todo el contenido multimedia cuenta con transcripciones y descripciones. 
+			Realizamos pruebas con usuarios reales para asegurar que nuestra plataforma sea accesible y utilizable para todos. 
+			Estamos comprometidos con una experiencia en línea inclusiva y equitativa para cada visitante, sin importar sus habilidades físicas.</p>
+		<div class="contenedor">
+			<div class="imagenContenedor">
+				<img src="../../../assets/dificiltad_fisica/Navegación con Teclado.jpeg" alt="Navegación con Teclado">
+				<div class="botonContenedor">
+					<button>
+						<a href="https://www.fundacionconectea.org/2023/05/17/la-web-de-fundacion-conectea-es-mas-accesible/" Target="_blank">
+							Nav con Teclado
+						</a>
+					</button>
+				</div>
+			</div>
+			<div class="imagenContenedor">
+				<img src="../../../assets/dificiltad_fisica/Tecnologías de Asistencia.jpeg" alt="Tecnologías de Asistencia">
+				<div class="botonContenedor">
+					<button>
+						<a href="https://fundacionadecco.org/azimut/las-nuevas-tecnologias-al-servicio-de-la-discapacidad/" Target="_blank">
+							Asistencia
+						</a>
+					</button>
+				</div>
+			</div>
+			<div class="imagenContenedor">
+				<img src="../../../assets/dificiltad_fisica/Contenido Multimedia.jpeg" alt="Contenido Multimedia">
+				<div class="botonContenedor">
+					<button>
+						<a href="https://www.consumer.es/solidaridad/cinco-paginas-web-muy-practicas-para-personas-con-discapacidad.html" Target="_blank">
+							Multimedia
+						</a>
+					</button>
+				</div>
 			</div>
 		</div>
-		<div class="imagenContenedor">
-			<img src="../../../assets/dificiltad_fisica/Tecnologías de Asistencia.jpeg" alt="Tecnologías de Asistencia">
-			<div class="botonContenedor">
-				<button>
-					<a href="https://fundacionadecco.org/azimut/las-nuevas-tecnologias-al-servicio-de-la-discapacidad/" Target="_blank">
-						Asistencia
-					</a>
-				</button>
-			</div>
-		</div>
-		<div class="imagenContenedor">
-			<img src="../../../assets/dificiltad_fisica/Contenido Multimedia.jpeg" alt="Contenido Multimedia">
-			<div class="botonContenedor">
-				<button>
-					<a href="https://www.consumer.es/solidaridad/cinco-paginas-web-muy-practicas-para-personas-con-discapacidad.html" Target="_blank">
-						Multimedia
-					</a>
-				</button>
-			</div>
-		</div>
+		<em class="texto" [style.fontSize.px]="obtenerTamanoTexto()">Esta página web es accesible para personas con discapacidad <span>visual</span>, <span>física</span>, <span>auditiva </span>y <span>cognitiva</span>.</em>
+		<p class="texto" [style.fontSize.px]="obtenerTamanoTexto()">Si necesitas ayuda adicional para acceder a la información de esta página, por favor <a class="contacto" routerLink="/contacto">contáctanos</a>.</p>
 	</div>
-	<em class="texto" [style.fontSize.px]="obtenerTamanoTexto()">Esta página web es accesible para personas con discapacidad <span>visual</span>, <span>física</span>, <span>auditiva </span>y <span>cognitiva</span>.</em>
-	<p class="texto" [style.fontSize.px]="obtenerTamanoTexto()">Si necesitas ayuda adicional para acceder a la información de esta página, por favor <a class="contacto" routerLink="/contacto">contáctanos</a>.</p>
 </body>
 </html>

@@ -5,60 +5,62 @@
 	<title>Ayudas para Personas con Discapacidad</title>
 </head>
 <body>
-	<h1 [style.fontSize.px]="obtenerTamanoTexto()"> OCIO </h1>
-	<p class="texto" [style.fontSize.px]="obtenerTamanoTexto()">En <strong>Adapta-Tech</strong> creemos que el ocio es un derecho fundamental de todas las personas, independientemente de sus capacidades o limitaciones. Por eso, apoyamos y colaboramos con las instituciones que crean y ofrecen actividades de ocio adaptadas y accesibles para las personas con discapacidad.
-        Nuestra misión es facilitar el acceso a la tecnología y la innovación a las personas con discapacidad, para que puedan disfrutar de una vida plena y participativa. Queremos contribuir a la inclusión social y a la igualdad de oportunidades de este colectivo, que representa más del 10% de la población.
-        En nuestra página web podrás encontrar información sobre los proyectos que desarrollamos, los productos y servicios que ofrecemos y las entidades con las que trabajamos. También podrás contactar con nosotros para solicitar asesoramiento, presupuesto o cualquier otra consulta.       
-        Adapta-Tech es más que una empresa, es una comunidad de personas comprometidas con el ocio inclusivo para las personas con discapacidad. ¿Te unes a nosotros?
-        </p>
-	<div class="contenedor">
-		<div class="fila1">
-			<div class="imagenContenedor">
-				<img src="../../../assets/ocio/OCIO 1.jpg" alt="Andalucía Inclusiva Cocemfe">
-				<div class="botonContenedor">
-					<button>
-						<a href="https://andaluciainclusiva.es/" Target="_blank">
-							Andalucía Inclusiva
-						</a>
-					</button>
+	<div class="capaNegra">
+		<h1 [style.fontSize.px]="obtenerTamanoTexto()"> OCIO </h1>
+		<p class="texto" [style.fontSize.px]="obtenerTamanoTexto()">En <strong>Adapta-Tech</strong> creemos que el ocio es un derecho fundamental de todas las personas, independientemente de sus capacidades o limitaciones. Por eso, apoyamos y colaboramos con las instituciones que crean y ofrecen actividades de ocio adaptadas y accesibles para las personas con discapacidad.
+			Nuestra misión es facilitar el acceso a la tecnología y la innovación a las personas con discapacidad, para que puedan disfrutar de una vida plena y participativa. Queremos contribuir a la inclusión social y a la igualdad de oportunidades de este colectivo, que representa más del 10% de la población.
+			En nuestra página web podrás encontrar información sobre los proyectos que desarrollamos, los productos y servicios que ofrecemos y las entidades con las que trabajamos. También podrás contactar con nosotros para solicitar asesoramiento, presupuesto o cualquier otra consulta.       
+			Adapta-Tech es más que una empresa, es una comunidad de personas comprometidas con el ocio inclusivo para las personas con discapacidad. ¿Te unes a nosotros?
+			</p>
+		<div class="contenedor">
+			<div class="fila1">
+				<div class="imagenContenedor">
+					<img src="../../../assets/ocio/OCIO 1.jpg" alt="Andalucía Inclusiva Cocemfe">
+					<div class="botonContenedor">
+						<button>
+							<a href="https://andaluciainclusiva.es/" Target="_blank">
+								Andalucía Inclusiva
+							</a>
+						</button>
+					</div>
+				</div>
+					<div class="imagenContenedor">
+					<img src="../../../assets/ocio/OCIO 2.jpg" alt="Paxis">
+					<div class="botonContenedor">
+						<button>
+							<a href="https://paxisinclusion.org/" Target="_blank">
+								Paxis
+							</a>
+						</button>
+					</div>
+				</div>
+				<div class="imagenContenedor">
+					<img src="../../../assets/ocio/OCIO 3.jpg"alt="Incluocio">
+					<div class="botonContenedor">
+						<button>
+							<a href="https://www.incluocio.org/#" Target="_blank">
+								Incluocio
+							</a>
+						</button>
+					</div>
 				</div>
 			</div>
-				  <div class="imagenContenedor">
-				<img src="../../../assets/ocio/OCIO 2.jpg" alt="Paxis">
-				<div class="botonContenedor">
-					<button>
-						<a href="https://paxisinclusion.org/" Target="_blank">
-							Paxis
-						</a>
-					</button>
-				</div>
-			</div>
-			<div class="imagenContenedor">
-				<img src="../../../assets/ocio/OCIO 3.jpg"alt="Incluocio">
-				<div class="botonContenedor">
-					<button>
-						<a href="https://www.incluocio.org/#" Target="_blank">
-							Incluocio
-						</a>
-					</button>
+			<div class="fila2">
+				<div class="imagenContenedor">
+					<img src="../../../assets/ocio/OCIO 4.jpg" alt="Apamys">
+					<div class="botonContenedor">
+						<button>
+							<a href="https://www.apamys.es/blog/" Target="_blank">
+								Apamys
+							</a>
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="fila2">
-			<div class="imagenContenedor">
-				<img src="../../../assets/ocio/OCIO 4.jpg" alt="Apamys">
-				<div class="botonContenedor">
-					<button>
-						<a href="https://www.apamys.es/blog/" Target="_blank">
-							Apamys
-						</a>
-					</button>
-				</div>
-			</div>
-		</div>
+		<em class="texto" [style.fontSize.px]="obtenerTamanoTexto()">Esta página web es accesible para personas con discapacidad <span>visual</span>, <span>física</span>, <span>auditiva </span>y <span>cognitiva</span>.</em>
+		<p class="texto" [style.fontSize.px]="obtenerTamanoTexto()">Si necesitas ayuda adicional para acceder a la información de esta página, por favor <a class="contacto" routerLink="/contacto">contáctanos</a>.</p>
 	</div>
-	<em class="texto" [style.fontSize.px]="obtenerTamanoTexto()">Esta página web es accesible para personas con discapacidad <span>visual</span>, <span>física</span>, <span>auditiva </span>y <span>cognitiva</span>.</em>
-    <p class="texto" [style.fontSize.px]="obtenerTamanoTexto()">Si necesitas ayuda adicional para acceder a la información de esta página, por favor <a class="contacto" routerLink="/contacto">contáctanos</a>.</p>
 </body>
 </html>
 
