@@ -22,6 +22,7 @@ import { DescargasComponent } from './descargas/descargas.component';
 import { ListaTareasComponent } from './Herramientas/lista-tareas/lista-tareas.component';
 import { LogueadoComponent } from './menu/login/logueado/logueado.component';
 import { ForoComponent } from './comunidad/foro/foro.component';
+import { NuevoTestimonioComponent } from './comunidad/nuevo-testimonio/nuevo-testimonio.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -41,6 +42,7 @@ export const routes: Routes = [
     { path: 'colaboradores', component: ColaboradoresComponent},
     { path: 'equipo', component: EquipoComponent},
     { path: 'testimonios', component: TestimonioComponent},
+    { path: 'nuevoTestimonio', component: NuevoTestimonioComponent},
     { path: 'contacto', component: ContactoComponent },
     { path: 'calcu', component: CalculadoraComponent },
     { path: 'medic', component: MedicacionComponent },

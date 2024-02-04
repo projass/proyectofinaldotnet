@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: beige;
+  }
+  /* .encabezado {
+    padding: 2px;
+    background-color: #333; */
+  .contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: #5b87d3;
+    border-radius: 10px;
+    border: 2px double black;
+    padding: 30px;
+    margin-top: 20px; /*Ajusta este valor según la separación que desees entre el botón y el contenedor*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #areaTexto {
+    width: 100%;
+    height: 300px; /* Puedes ajustar la altura según tus preferencias */
+    resize: none; /* Evita que el usuario redimensione la caja de texto */
+    border: 2px double #0f0000; /* Borde del área de texto */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #botonUsuario {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-image: linear-gradient(90deg, rgba(32, 103, 154, 1) 0%, rgba(32, 103, 154, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    border: 5px outset rgb(22, 132, 223);
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgb(12, 28, 211),
+      1px -1px 0 rgb(14, 47, 210),
+      1px 1px 0 rgb(7, 20, 163),
+      -1px 1px 0 rgb(115, 18, 235);
+  }
+  #botonUsuario:hover {
+    border: 5px outset rgb(13, 81, 137);
+    border-right-color: rgb(54, 190, 240);
+    border-top-color: rgb(51, 137, 208);
+    border-left-color: rgb(33, 83, 185);
+    box-shadow: 0 1px 10px 2px black;
+  }
+  
+  #botonPublicar {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-image: linear-gradient(90deg, rgba(32, 103, 154, 1) 0%, rgba(32, 103, 154, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 10%;
+    border: 5px outset rgb(22, 132, 223);
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 rgb(12, 28, 211),
+      1px -1px 0 rgb(14, 47, 210),
+      1px 1px 0 rgb(7, 20, 163),
+      -1px 1px 0 rgb(115, 18, 235);
+  }
+  #botonPublicar:hover {
+    border: 5px outset rgb(13, 81, 137);
+    border-right-color: rgb(54, 190, 240);
+    border-top-color: rgb(51, 137, 208);
+    border-left-color: rgb(33, 83, 185);
+    box-shadow: 0 1px 10px 2px black;
+  }
