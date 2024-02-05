@@ -21,8 +21,9 @@ main {
 main h1 {
     font-size: 60px;
     padding-top: 50px;
-    color: white;
+    color: rgb(7, 0, 0);
     position: static;
+    font-weight: bold;
 }
 
 .capaNegra {
@@ -35,13 +36,13 @@ main h1 {
 }
 
 .p1 {
-    color: rgb(243, 238, 238);
+    color: black;
     margin: auto;
     margin-top: 20px;
     width: 100%;
     max-width: 600px;
     position: static;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 .contenedorTestimonio {

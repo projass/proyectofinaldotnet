@@ -2,7 +2,9 @@
 
     <div class="container">
       <h2>Contacto</h2>
-      <form action="#" method="post">
+      <form action="#" method="post" id="miFormulario">
+        <label for="nombre" class="required">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
         <label for="nombre" class="required">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
   
@@ -91,8 +93,23 @@
       <label for="mensaje" class="required">Mensaje:</label>
       <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-      <button>Enviar</button>
+      <!-- <button type="submit">Enviar</button> -->
+      <button type="reset" form="miFormulario">Enviar</button><!--temporal para Limpiarel formulario-->
     </form>
   </div>
-
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var formulario = document.querySelector('form');
+  
+      formulario.addEventListener('submit', function() {
+        // Código para enviar el formulario (puedes agregar tu lógica de envío aquí)
+  
+        // Limpiar los campos del formulario
+        formulario.reset();
+  
+        // Prevenir el envío normal del formulario
+        event.preventDefault();
+      });
+    });
+  </script> -->
 </body>
