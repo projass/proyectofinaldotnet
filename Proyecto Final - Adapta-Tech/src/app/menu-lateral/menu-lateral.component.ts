@@ -26,12 +26,8 @@ export class MenuLateralComponent {
   restablecer() {
     window.location.reload();
   }
-  mostrarGuiaCursor() {
-    this.guiaCursorService.toggleMostrarGuia();
-  }
-
-  moverGuiaCursor(event: MouseEvent) {
-    this.guiaCursorService.actualizarCoordenadas(event);
+  moverGuiaCursor(): void {
+    this.guiaCursorService.activar();
   }
 
 }

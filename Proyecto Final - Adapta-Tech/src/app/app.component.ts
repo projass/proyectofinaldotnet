@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from "./menu/menu/menu.component";
@@ -6,6 +6,7 @@ import { FooterComponent } from './menu/footer/footer.component';
 import { ColaboradoresComponent } from './colaboradores/colaboradores.component';
 import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 import { GuiaCursorService } from '../services/guia-cursor.service';
+import { Subscription } from 'rxjs';
 declare function aceptarCookies(): void;
 
 @Component({
@@ -17,7 +18,16 @@ declare function aceptarCookies(): void;
 })
 export class AppComponent implements OnInit{
   title = 'MiProyecto';
+  cursorPosition = { x: 0, y: 0 };
+  subscription: Subscription = new Subscription;
   ngOnInit() {
+    this.subscription = this.guiaCursorService.activo$.subscribe(activo => {
+      if (activo) {
+        document.addEventListener('mousemove', this.moverGuiaCursor);
+      } else {
+        document.removeEventListener('mousemove', this.moverGuiaCursor);
+      }
+    });
   }
   constructor(public guiaCursorService: GuiaCursorService) {}
   
@@ -35,11 +45,16 @@ export class AppComponent implements OnInit{
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
-  mostrarGuiaCursor() {
-    this.guiaCursorService.toggleMostrarGuia();
+  
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
-  moverGuiaCursor(event: MouseEvent) {
-    this.guiaCursorService.actualizarCoordenadas(event);
+  moverGuiaCursor(event: MouseEvent): void {
+    const cursorLine = document.getElementById('cursor-line');
+    if (cursorLine) {
+      cursorLine.style.top = event.clientY + 'px';
+      cursorLine.style.left = event.clientX + 'px';
+    }
   }
 }

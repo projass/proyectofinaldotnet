@@ -10,19 +10,12 @@ import { GuiaCursorService } from '../../services/guia-cursor.service';
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent implements OnInit{
-  constructor(private textoService: TextoService, private guiaCursorService: GuiaCursorService) { }
+  constructor(private textoService: TextoService) { }
 
   ngOnInit(): void {
   }
 
   obtenerTamanoTexto(): number {
     return this.textoService.getTamanoTexto();
-  }
-  mostrarGuiaCursor() {
-    this.guiaCursorService.toggleMostrarGuia();
-  }
-
-  moverGuiaCursor(event: MouseEvent) {
-    this.guiaCursorService.actualizarCoordenadas(event);
   }
 }

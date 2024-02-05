@@ -70,3 +70,11 @@ main {
     left: 0;
     z-index: 9998;
 }
+
+#cursor-line {
+    position: fixed;
+    width: 500px;
+    height: 10px;
+    background-color: black;
+    pointer-events: none;
+}

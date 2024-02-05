@@ -1,20 +1,18 @@
-// guia-cursor.service.ts
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class GuiaCursorService {
-  mostrarGuia: boolean = false;
-  guiaTop: number = 0;
-  guiaLeft: number = 0;
+  private _activo = new BehaviorSubject<boolean>(false);
+  activo$ = this._activo.asObservable();
 
-  toggleMostrarGuia() {
-    this.mostrarGuia = !this.mostrarGuia;
+  activar() {
+    this._activo.next(true);
   }
 
-  actualizarCoordenadas(event: MouseEvent) {
-    this.guiaTop = event.clientY;
-    this.guiaLeft = event.clientX;
+  desactivar() {
+    this._activo.next(false);
   }
 }

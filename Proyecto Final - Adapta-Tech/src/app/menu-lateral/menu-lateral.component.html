@@ -4,14 +4,15 @@
         <a><h6>FUNCIONES ESPECIALES</h6></a>
         <a mat-list-item href="#"(click)="aumentarTexto()" role="button"><i class="fa-solid fa-plus"></i> Aumentar Texto </a>
         <a mat-list-item href="#"(click)="disminuirTexto()" role="button"><i class="fa-solid fa-minus"></i> Disminuir Texto </a>
-        <a mat-list-item href="#" (click)="mostrarGuiaCursor()"><i class="fa-solid fa-mouse"></i> Guía Cursor </a>
+        <a mat-list-item href="#" (click)="moverGuiaCursor()"><i class="fa-solid fa-mouse"></i> Guía Cursor </a>
         <a mat-list-item href="#" (click)="restablecer()"><i class="fa-solid fa-arrow-rotate-left"></i> Restablecer </a>
       </mat-nav-list>
     </mat-sidenav>
    
-    <mat-sidenav-content (mousemove)="moverGuiaCursor($event)">
+    <mat-sidenav-content>
       <button mat-icon-button (click)="sidenav.toggle()">
         <img src="../../assets/logo/persona ciega.png" alt="icono" class="icon-img">
       </button>
     </mat-sidenav-content>
   </mat-sidenav-container>
+
