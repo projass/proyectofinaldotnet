@@ -53,8 +53,8 @@ export class AppComponent implements OnInit{
   moverGuiaCursor(event: MouseEvent): void {
     const cursorLine = document.getElementById('cursor-line');
     if (cursorLine) {
-      cursorLine.style.top = event.clientY + 'px';
-      cursorLine.style.left = event.clientX + 'px';
+      cursorLine.style.top = (event.clientY - 10) + 'px';
+      cursorLine.style.left = (event.clientX - 250) + 'px';;
     }
   }
 }
