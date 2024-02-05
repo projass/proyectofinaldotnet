@@ -2,24 +2,25 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
-    background-color: beige;
+    height: 70vh;
+   
   }
   .contenedor {
-    width: 100%;
-    max-width: 1000px;
+    width: 70%;
+    max-width: none;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     color: white;
-    background-color: #5b87d3;
-    border-radius: 10px;
-    border: 2px double black;
+    background-color: #6fa3d0;
+    border-radius: 30px;
+    border: 4px inset black;
     padding: 30px;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
   
   #areaTexto {
@@ -29,6 +30,8 @@ body {
     border: 2px double #0f0000;
     padding: 10px;
     box-sizing: border-box;
+    font-size: larger;
+    font-weight: bold;    
   }
   #botonUsuario {
     font-size: 1.5rem;

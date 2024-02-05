@@ -4,11 +4,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-.contenedorPadre {
+/* .contenedorPadre {
   display: flex;
   justify-content: center;
   gap: 70px;
-}
+} */
 
 .contenedor {
   display: flex;
@@ -29,12 +29,15 @@ body {
   outline: none;
   padding: 0px 7px;
   border-radius: 6px;
-  font-size: 15px;
-  color: white;
-  background-color: rgba(15, 102, 253, 0.5);
+  font-size: 18px;
+  font-weight: bold;  
+  color: rgb(10, 10, 10);
+  background-color: rgb(173, 216, 230);
   border: 4px double black;
   box-shadow: 3px 3px 10px #6f97db,
   -1px -1px 6px rgba(5, 64, 215, 0.4);
+  display: flex;
+  justify-content: space-between;
 }
 
 .contenedor .input:valid,
@@ -146,12 +149,16 @@ h3,p {
 h3 {
   font-weight:bolder;
   font-size: 500;
+  display: flex;
+  justify-content: space-between;
 }
-
+.input::placeholder {
+  color: #00080f; /* Replace with your desired color code for the placeholder text */
+}
 .botonera {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 150px;
   
 }
 button {
