@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { TextoService } from '../../services/texto.service';
 import { GuiaCursorService } from '../../services/guia-cursor.service';
+import { ContrasteService } from '../../services/contraste.service';
 
 @Component({
   selector: 'app-menu-lateral',
@@ -15,7 +16,7 @@ import { GuiaCursorService } from '../../services/guia-cursor.service';
 })
 export class MenuLateralComponent {
   guiaCursorActiva = false; 
-  constructor(private textoService: TextoService, private guiaCursorService: GuiaCursorService) { }
+  constructor(private textoService: TextoService, private guiaCursorService: GuiaCursorService, private contrasteService: ContrasteService) { }
 
   aumentarTexto(): void {
     this.textoService.aumentarTexto();
@@ -37,5 +38,8 @@ export class MenuLateralComponent {
     } else {
       this.guiaCursorService.desactivar();
     }
+  }
+  toggleContraste(): void {
+      this.contrasteService.activarContraste();
   }
 }
