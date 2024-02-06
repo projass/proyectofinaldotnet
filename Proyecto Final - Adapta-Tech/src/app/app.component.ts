@@ -50,6 +50,10 @@ export class AppComponent implements OnInit{
     this.subscription.unsubscribe();
   }
 
+  toggleGuiaCursor(): void {
+    this.guiaCursorService.toggle(); 
+  }
+
   moverGuiaCursor(event: MouseEvent): void {
     const cursorLine = document.getElementById('cursor-line');
     if (cursorLine) {

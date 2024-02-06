@@ -14,6 +14,7 @@ import { GuiaCursorService } from '../../services/guia-cursor.service';
   styleUrl: './menu-lateral.component.css'
 })
 export class MenuLateralComponent {
+  guiaCursorActiva = false; 
   constructor(private textoService: TextoService, private guiaCursorService: GuiaCursorService) { }
 
   aumentarTexto(): void {
@@ -29,5 +30,12 @@ export class MenuLateralComponent {
   moverGuiaCursor(): void {
     this.guiaCursorService.activar();
   }
-
+  toggleGuiaCursor(): void {
+    this.guiaCursorActiva = !this.guiaCursorActiva;
+    if (this.guiaCursorActiva) {
+      this.guiaCursorService.activar();
+    } else {
+      this.guiaCursorService.desactivar();
+    }
+  }
 }

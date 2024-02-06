@@ -15,4 +15,7 @@ export class GuiaCursorService {
   desactivar() {
     this._activo.next(false);
   }
+  toggle() {
+    this._activo.next(!this._activo.value);
+  }
 }

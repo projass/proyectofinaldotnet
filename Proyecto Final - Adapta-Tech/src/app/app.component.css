@@ -77,4 +77,10 @@ main {
     height: 10px;
     background-color: black;
     pointer-events: none;
+    display: block;
 }
+
+
+#cursor-line.oculta {
+    display: none;
+  }
